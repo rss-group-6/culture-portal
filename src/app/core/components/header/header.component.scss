@@ -1,0 +1,36 @@
+.header,
+.choice-language-btn,
+.options button {
+  font-family: Raleway, sans-serif;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.btn-outline-secondary,
+.toggler {
+  outline: 0;
+}
+
+.toggler {
+  width: 50px;
+  height: 33px;
+}
+
+@media screen and (max-width: 970px) {
+  .header,
+  .choice-language-btn,
+  .options button {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
