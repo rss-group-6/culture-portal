@@ -19,4 +19,8 @@ export class HeaderComponent implements OnInit {
   public goTo(url): void {
     this.router.navigateByUrl(url);
   }
+
+  public setLanguage(lang: string): void {
+    this.language = lang;
+  }
 }

@@ -7,9 +7,9 @@
           <div ngbDropdown class="d-inline-block">
             <button class="btn btn-lg btn-outline-secondary choice-language-btn" id="dropdownBasic1" ngbDropdownToggle>{{ language }}</button>
             <div class="options" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <button class="btn-outline-secondary" ngbDropdownItem>EN</button>
-              <button class="btn-outline-secondary" ngbDropdownItem>RU</button>
-              <button class="btn-outline-secondary" ngbDropdownItem>BY</button>
+              <button class="btn-outline-secondary" (click)="setLanguage('EN')" ngbDropdownItem>EN</button>
+              <button class="btn-outline-secondary" (click)="setLanguage('RU')" ngbDropdownItem>RU</button>
+              <button class="btn-outline-secondary" (click)="setLanguage('BY')" ngbDropdownItem>BY</button>
             </div>
           </div>
         </div>
