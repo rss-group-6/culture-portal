@@ -1,4 +1,4 @@
-import { Developer } from './developer';
+import { Developer } from '@shared/models/developer';
 
 import kravchenko from '../assets/images/developers/kravchenko.jfif';
 import lysiuk from '../assets/images/developers/lysiuk.png';

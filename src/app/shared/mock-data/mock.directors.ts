@@ -1,4 +1,4 @@
-import { Director } from './director';
+import { Director } from '@shared/models/director';
 
 import mirovich1 from '../assets/images/mirovich1.jpg';
 import mirovich2 from '../assets/images/mirovich2.jpg';
@@ -53,7 +53,7 @@ export const Directors: Director[] = [
     },
     {
         date: '1937',
-        work: 'Как закалялась сталь' 
+        work: 'Как закалялась сталь'
     },
     {
         date: '1939',
@@ -107,7 +107,7 @@ export const Directors: Director[] = [
     },
     {
         date: '1955',
-        work: 'Трубадур' 
+        work: 'Трубадур'
     },
     {
         date: '1960',
@@ -118,7 +118,7 @@ export const Directors: Director[] = [
         aleksandrovskaya2,
         aleksandrovskaya3,
         aleksandrovskaya4,
-        aleksandrovskaya5 
+        aleksandrovskaya5
     ],
     videos: [
         'https://www.youtube.com/watch?v=v3LC9JtorMM',
@@ -173,7 +173,7 @@ export const Directors: Director[] = [
     },
     {
         date: '2002',
-        work: 'Я. Купала «Сон на кургане»' 
+        work: 'Я. Купала «Сон на кургане»'
     }],
     photos: [
         lucenko1,
