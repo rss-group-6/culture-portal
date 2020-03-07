@@ -1,0 +1,39 @@
+<div class="container-fluid justify-content-center wrapper">
+  <div class="row justify-content-center bg-light">
+    <header class="header col-xl-10 col-12 p-2 p-md-3 p-xl-4">
+      <nav class="navbar navbar-expand-sm bg-light">
+        <img class="logo" src="../../../../assets/images/logo.png" alt="Logo" (click)="goTo('/')" />
+        <div class="ml-auto mr-5 ml-sm-5">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-lg btn-outline-secondary choice-language-btn" id="dropdownBasic1" ngbDropdownToggle>{{ language }}</button>
+            <div class="options" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="btn-outline-secondary" (click)="setLanguage('EN')" ngbDropdownItem>EN</button>
+              <button class="btn-outline-secondary" (click)="setLanguage('RU')" ngbDropdownItem>RU</button>
+              <button class="btn-outline-secondary" (click)="setLanguage('BY')" ngbDropdownItem>BY</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="navbar-toggler btn-secondary toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+          &#9776;
+        </button>
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+          <ul class="navbar-nav col-9 col-md-7 ml-sm-auto mr-sm-0 mx-auto px-0 justify-content-between navigation">
+            <li class="nav-item" [class.active]="statePages.home">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/home')">Home</a>
+            </li>
+            <li class="nav-item" [class.active]="statePages.allDirectors">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/allDirectors')">All directors</a>
+            </li>
+            <li class="nav-item" [class.active]="statePages.workLog">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/workLog')">Work log</a>
+            </li>
+            <li class="nav-item" [class.active]="statePages.styleGuide">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/styleGuide')">Style guide</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+</div>
