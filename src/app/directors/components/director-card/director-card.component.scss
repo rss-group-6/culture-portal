@@ -1,0 +1,10 @@
+
+$green: #a2c872;
+
+:host{
+  margin-bottom: 10px;
+  & :hover{
+    cursor: pointer;
+    color: $green;
+  }
+}

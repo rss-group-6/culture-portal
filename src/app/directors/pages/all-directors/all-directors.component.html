@@ -1,9 +1,7 @@
 <div class="container-fluid justify-content-center wrapper">
-  <input class="form-control" type="text" placeholder="Search">
+  <input class="form-control search-input" type="text" placeholder="Search" #searchQuery>
 
-  <div class="d-flex flex-wrap justify-content-between">
+  <div class="card-deck justify-content-center ">
     <app-director-card *ngFor="let director of allDirectors" [director]="director"></app-director-card>
   </div>
-
-
 </div>
