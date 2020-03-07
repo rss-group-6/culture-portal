@@ -18,11 +18,11 @@ const routes: Routes = [
   },
   {
     path: 'workLog',
-    loadChildren: () => import('./worklog/worklog.module').then(m => m.WorklogModule),
+    loadChildren: () => import('./worklog/worklog.module').then(m => m.WorkLogModule),
   },
   {
     path: 'styleGuide',
-    loadChildren: () => import('./styleguide/styleguide.module').then(m => m.StyleguideModule),
+    loadChildren: () => import('./styleguide/styleguide.module').then(m => m.StyleGuideModule),
   }
 ];
 
