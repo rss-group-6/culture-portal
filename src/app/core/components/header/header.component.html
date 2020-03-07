@@ -1,7 +1,7 @@
 <div class="container-fluid justify-content-center wrapper">
   <div class="row justify-content-center bg-light">
     <header class="header col-xl-10 col-12 p-2 p-md-3 p-xl-4">
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar navbar-expand-sm bg-light">
         <img class="logo" src="../../../../assets/images/logo.png" alt="Logo" (click)="goTo('/')" />
         <div class="ml-auto mr-5 ml-sm-5">
           <div ngbDropdown class="d-inline-block">
@@ -18,15 +18,18 @@
           &#9776;
         </button>
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-          <ul class="navbar-nav col-lg-5 col-7 ml-sm-auto mr-sm-0 mx-auto px-0 py-4 justify-content-between">
-            <li class="nav-item active">
-              <a class="nav-link text-center" (click)="isMenuCollapsed = true; goTo('/')">Home</a>
+          <ul class="navbar-nav col-9 col-md-7 ml-sm-auto mr-sm-0 mx-auto px-0 justify-content-between navigation">
+            <li class="nav-item" [class.active]="statePages.home">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/home')">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" (click)="isMenuCollapsed = true; goTo('/directors')">All directors</a>
+            <li class="nav-item" [class.active]="statePages.allDirectors">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/allDirectors')">All directors</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" (click)="isMenuCollapsed = true; goTo('/worklog')">Work log</a>
+            <li class="nav-item" [class.active]="statePages.workLog">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/workLog')">Work log</a>
+            </li>
+            <li class="nav-item" [class.active]="statePages.styleGuide">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/styleGuide')">Style guide</a>
             </li>
           </ul>
         </div>
