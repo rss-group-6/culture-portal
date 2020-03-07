@@ -2,7 +2,7 @@
   <input class="form-control" type="text" placeholder="Search">
 
   <div class="d-flex flex-wrap justify-content-between">
-
+    <app-director-card *ngFor="let director of allDirectors" [director]="director"></app-director-card>
   </div>
 
 
