@@ -1,7 +1,16 @@
 <div class="container p-0">
+  <span class="d-flex flex-column align-items-center mt-5 p-0" *ngIf="!this.worklogService.counter">
+    <p>{{generalDifficulties | uppercase}}</p>
+    <ol class="">
+      <li class="m-3"
+        *ngFor="let log of logs[this.worklogService.lang][this.worklogService.counter].difficulties; let i = index">
+        <p>{{log | uppercase}}</p>
+      </li>
+    </ol>
+  </span>
   <ul class="mt-5 p-0" *ngIf="true">
-    <span class="d-flex justify-content-center total" [innerHtml]="calculateTotal()"></span>
-    <li class="m-3 button" *ngFor="let log of logs[this.worklogService.counter].item; let i = index"
+    <span class="d-flex justify-content-center total" [innerHtml]="calculateTotal(this.worklogService.lang)"></span>
+    <li class="m-3" *ngFor="let log of logs[this.worklogService.lang][this.worklogService.counter].item; let i = index"
       (click)="findItem(log.id)">
       <span class="d-flex align-items-center p-2">
         <input class="ml-3" id="{{log.id}}" type="checkbox" [checked]="log.completed" (change)="findItem(log.id)">
