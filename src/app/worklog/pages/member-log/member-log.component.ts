@@ -27,14 +27,14 @@ export class MemberLogComponent {
           acc += +e.points;
         }
       });
-      total = `Total: ${acc} pt.`;
+      total = `Total: ${acc} pt`;
     } else {
       this.logs[this.worklogService.counter].item.map(e => {
         if (e.completed) {
           acc += +e.points.slice(0, -3);
         }
       });
-      total = `Total: ${acc} hrs`;
+      total = `Total: ${acc} hr`;
     }
 
     return total;

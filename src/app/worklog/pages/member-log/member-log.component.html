@@ -1,6 +1,6 @@
 <div class="container p-0">
   <ul class="mt-5 p-0" *ngIf="true">
-    <span class="d-flex justify-content-center"><strong [innerHtml]="calculateTotal()"></strong></span>
+    <span class="d-flex justify-content-center total" [innerHtml]="calculateTotal()"></span>
     <li class="m-3 button" *ngFor="let log of logs[this.worklogService.counter].item; let i = index"
       (click)="findItem(log.id)">
       <span class="d-flex align-items-center p-2">

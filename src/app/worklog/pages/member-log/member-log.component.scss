@@ -2,6 +2,10 @@
   max-width: 960px;
 }
 
+.total {
+  font-size: 2.4rem;
+}
+
 ul {
   animation: animationFrames linear 0.8s;
   animation-iteration-count: 1;
@@ -41,13 +45,21 @@ input[type='checkbox']:checked + .checkmark {
 }
 
 @media screen and (max-width: 960px) {
+  .total {
+    font-size: 2rem;
+  }
+
   span {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .total {
+    font-size: 1.4rem;
+  }
   span {
+    min-height: 2rem;
     font-size: 1rem;
   }
 }
