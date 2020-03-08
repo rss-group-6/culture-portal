@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
-import { Developers } from '@shared/mock-data/mock.developers';
+import { GeneralLog } from '../../models/worklog.models';
 import { WorklogService } from '../../services/worklog.service';
 
 @Component({
@@ -10,16 +10,16 @@ import { WorklogService } from '../../services/worklog.service';
   providers: [NgbCarouselConfig],
 })
 export class CarouselNavigationComponent implements OnInit {
-  @ViewChild('carousel', { static: true }) carousel: NgbCarousel;
-
-  public members: string[] = [];
+  public membersTitle: string[] = [];
+  public generalTitle = GeneralLog[this.worklogService.lang][0].name;
 
   constructor(config: NgbCarouselConfig, public worklogService: WorklogService) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = false;
   }
 
-  ngOnInit() {
-    Developers.map(e => this.members.push(`${e.name} ${e.surname}`));
+  public ngOnInit(): void {
+    GeneralLog[this.worklogService.lang].map(e => this.membersTitle.push(e.name));
+    this.membersTitle = this.membersTitle.splice(1);
   }
 }
