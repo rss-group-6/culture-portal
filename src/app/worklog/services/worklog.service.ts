@@ -1,22 +1,18 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class WorklogService {
   public counter = 0;
-  public member = 0;
-  public general: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  private member = 0;
+  public lang = 'RU';
 
   constructor() {}
 
-  public increase() {
-    this.counter += 1;
-  }
-
-  getCurrentMember($event) {
+  public getCurrentMember($event): number {
     const event = $event.target.className;
+
     if (event === 'carousel-control-next-icon' || event === 'carousel-control-next') {
       this.counter += 1;
       if (this.counter > 6) {
@@ -30,11 +26,6 @@ export class WorklogService {
       }
     }
 
-    if (this.counter) {
-      this.general.next(true);
-    } else {
-      this.general.next(false);
-    }
     return this.member;
   }
 }
