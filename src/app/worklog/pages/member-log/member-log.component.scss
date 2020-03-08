@@ -3,9 +3,15 @@
 }
 
 ul {
+  animation: animationFrames linear 0.8s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
   list-style: none;
 
   li {
+    animation: animationFrames linear 0.8s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
     border-bottom: 1px solid #83838394;
     cursor: pointer;
   }
@@ -43,5 +49,17 @@ input[type='checkbox']:checked + .checkmark {
 @media screen and (max-width: 576px) {
   span {
     font-size: 1rem;
+  }
+}
+
+// animation
+@keyframes animationFrames {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
