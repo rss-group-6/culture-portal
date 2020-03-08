@@ -42,7 +42,7 @@ export class MemberLogComponent {
 
     switch (lang) {
       case 'RU':
-        !this.worklogService.counter ? (total = `Всего: ${acc} баллов`) : (total = `Всего: ${acc} часов`);
+        !this.worklogService.counter ? (total = `Всего: ${acc} баллов`) : (total = `Всего: ${acc} часа(ов)`);
         break;
       case 'EN':
         !this.worklogService.counter ? (total = `Total: ${acc} pt`) : (total = `Total: ${acc} hr`);
