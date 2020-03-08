@@ -5,12 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class WorklogService {
   public counter = 0;
-  private member = 0;
-  public lang = 'RU';
 
-  constructor() {}
-
-  public getCurrentMember($event): number {
+  public getCurrentMember($event): void {
     const event = $event.target.className;
 
     if (event === 'carousel-control-next-icon' || event === 'carousel-control-next') {
@@ -25,7 +21,5 @@ export class WorklogService {
         this.counter = 6;
       }
     }
-
-    return this.member;
   }
 }

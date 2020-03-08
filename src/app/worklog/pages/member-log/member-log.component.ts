@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GeneralLog } from '../../models/worklog.models';
 import { WorklogService } from '../../services/worklog.service';
+import { SharedService } from '@shared/services/shared.service';
 
 @Component({
   selector: 'app-member-log',
@@ -10,22 +11,22 @@ import { WorklogService } from '../../services/worklog.service';
 export class MemberLogComponent {
   public logs = GeneralLog;
   public generalDifficulties =
-    GeneralLog[this.worklogService.lang][this.worklogService.counter].difficultiesLn;
+    GeneralLog[this.sharedService.language][this.worklogService.counter].difficultiesLn;
 
-  constructor(public worklogService: WorklogService) {}
+  constructor(public worklogService: WorklogService, public sharedService: SharedService) {}
 
   public findItem(id: number): void {
-    this.logs[this.worklogService.lang][this.worklogService.counter].item[id - 1].completed = !this.logs[
-      this.worklogService.lang
+    this.logs[this.sharedService.language][this.worklogService.counter].item[id - 1].completed = !this.logs[
+      this.sharedService.language
     ][this.worklogService.counter].item[id - 1].completed;
   }
 
-  public calculateTotal(lang: string): string {
+  public calculateTotal(language: string): string {
     let acc = 0;
     let total: string;
 
     if (this.worklogService.counter === 0) {
-      this.logs[lang][this.worklogService.counter].item.map(e => {
+      this.logs[language][this.worklogService.counter].item.map(e => {
         if (e.completed) {
           acc += +e.points;
         }
@@ -33,14 +34,14 @@ export class MemberLogComponent {
     }
 
     if (this.worklogService.counter) {
-      this.logs[lang][this.worklogService.counter].item.map(e => {
+      this.logs[language][this.worklogService.counter].item.map(e => {
         if (e.completed) {
           acc += +e.points.slice(0, -3);
         }
       });
     }
 
-    switch (lang) {
+    switch (language) {
       case 'RU':
         !this.worklogService.counter ? (total = `Всего: ${acc} баллов`) : (total = `Всего: ${acc} часа(ов)`);
         break;
