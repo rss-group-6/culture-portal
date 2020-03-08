@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center p-0 wrapper" (click)="this.worklogService.getCurrentMember($event)">
+  <ngb-carousel class="d-flex align-items-center" *ngIf="members" interval="0">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper m-0">
+        <p class="d-flex m-0">GENERAL LOG</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide *ngFor="let member of members; let i = index">
+      <div class="picsum-img-wrapper m-0">
+        <p class="d-flex m-0">{{member | uppercase}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

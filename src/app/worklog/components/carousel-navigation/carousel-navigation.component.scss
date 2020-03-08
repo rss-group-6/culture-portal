@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  background-color: #a2c872;
+}
+ngb-carousel {
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  font-family: Raleway, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #000;
+  outline: none;
+}
+
+.picsum-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  div > p {
+    font-size: 1.4rem;
+  }
+}
