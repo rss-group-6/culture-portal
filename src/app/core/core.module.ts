@@ -11,7 +11,7 @@ import { DirectorOfDayPageComponent } from './pages/director-of-day-page/directo
 import { DirectorOfDayComponent } from './components/director-of-day/director-of-day.component';
 
 @NgModule({
-  declarations: [HeaderComponent, HomePageComponent, DevelopersListComponent, DescriptionPortalComponent, DirectorOfDayComponent, DirectorOfDayPageComponent],
+  declarations: [HeaderComponent, HomePageComponent, DevelopersListComponent, DeveloperItemComponent, DescriptionPortalComponent, DirectorOfDayComponent, DirectorOfDayPageComponent],
   imports: [CommonModule, SharedModule, NgbModule],
   exports: [SharedModule, HomePageComponent, HeaderComponent, DevelopersListComponent]
 })
