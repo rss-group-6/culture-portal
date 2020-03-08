@@ -1,0 +1,110 @@
+@keyframes scale {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 120%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translateFromLeft {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes translateFromRight {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.wrapper {
+  background-image: url('../../../../assets/images/bg-description-portal.jpg');
+  background-repeat: no-repeat;
+}
+
+.opacity-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.description-portal {
+  max-width: 1440px;
+
+  &__name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    animation: opacity, translateFromLeft;
+    animation-duration: 3s;
+  }
+
+  &__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
+    animation: opacity, translateFromRight;
+    animation-duration: 3s;
+  }
+}
+
+.feature-panel {
+  background-color: #a4ecde;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 580px) {
+  .wrapper {
+    background-size: 120%;
+    animation-name: scale;
+    animation-duration: 5s;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .description-portal {
+    &__name {
+      font-size: 6rem;
+    }
+
+    &__description {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description-portal {
+    &__name {
+      font-size: 4rem;
+    }
+
+    &__description {
+      font-size: 1.5rem;
+    }
+  }
+}
