@@ -8,14 +8,19 @@
     to { right: 0; }
 }
 
+@keyframes leftToRight {
+    from { left: -20%; }
+    to { left: 0; }
+}
+
 .image {
-    animation: fadein 4s;
+    animation: fadein 4s, leftToRight 3s;
     max-width: 300px;
 }
 
 .info {
     font-family: Raleway, sans-serif;
-    animation: rightToLeft 3s;
+    animation: fadein 4s, rightToLeft 3s;
 }
 
 .more {
