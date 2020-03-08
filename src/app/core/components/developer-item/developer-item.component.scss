@@ -1,0 +1,15 @@
+:host {
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #6c757d;
+
+  &:hover {
+    color:#a2c872;
+  }
+}
+

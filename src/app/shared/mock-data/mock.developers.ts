@@ -1,17 +1,10 @@
 import { Developer } from '@shared/models/developer';
 
-import kravchenko from '../assets/images/developers/kravchenko.jfif';
-import lysiuk from '../assets/images/developers/lysiuk.png';
-import sidarkevich from '../assets/images/developers/sidarkevich.png';
-import shcheglakov from '../assets/images/developers/shcheglakov.png';
-import golomb from '../assets/images/developers/golomb.png';
-import popova from '../assets/images/developers/popova.jfif';
-
 export const Developers: Developer[] = [
 {
   name: 'Evgeny',
   surname: "Kravchenko",
-  photo: kravchenko,
+  photo: '../assets/images/developers/kravchenko.jfif',
   github: 'https://github.com/Evgeny-Kravchenko',
   telegram: 'https://t.me/k1696',
   worklog: '10%'
@@ -19,7 +12,7 @@ export const Developers: Developer[] = [
 {
   name: 'Ekaterina',
   surname: "Lysiuk",
-  photo: lysiuk,
+  photo: '../assets/images/developers/lysiuk.png',
   github: 'https://github.com/ekater1na',
   telegram: 'https://t.me/ObsssQ',
   worklog: '10%'
@@ -27,7 +20,7 @@ export const Developers: Developer[] = [
 {
   name: 'Mikhail',
   surname: "Sidarkevich",
-  photo: sidarkevich,
+  photo: '../assets/images/developers/sidarkevich.png',
   github: 'https://github.com/chivekrodis',
   telegram: 'string',
   worklog: '10%'
@@ -35,7 +28,7 @@ export const Developers: Developer[] = [
 {
   name: 'Mikhail',
   surname: "Shcheglakov",
-  photo: shcheglakov,
+  photo: '../assets/images/developers/shcheglakov.png',
   github: 'https://github.com/madmike85',
   telegram: 'https://t.me/MikhailShcheglakov',
   worklog: '10%'
@@ -43,7 +36,7 @@ export const Developers: Developer[] = [
 {
   name: 'Maria',
   surname: "Golomb",
-  photo: golomb,
+  photo: '../assets/images/developers/golomb.png',
   github: 'https://github.com/mariagolomb',
   telegram: 'https://t.me/MariaGolomb',
   worklog: '10%'
@@ -51,7 +44,7 @@ export const Developers: Developer[] = [
 {
   name: 'Anastasiya',
   surname: "Popova",
-  photo: popova,
+  photo: '../assets/images/developers/popova.png',
   github: 'https://github.com/a-popova',
   telegram: 'https://t.me/anastasiya2810',
   worklog: '10%'
