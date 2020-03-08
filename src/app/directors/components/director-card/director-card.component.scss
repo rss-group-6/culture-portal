@@ -1,10 +1,19 @@
-
 $green: #a2c872;
 
 :host{
   margin-bottom: 10px;
-  & :hover{
-    cursor: pointer;
-    color: $green;
+}
+
+.shading {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s ease ;
+  opacity: 0;
+  &:hover{
+    opacity: 0.3;
   }
 }
+
