@@ -5,11 +5,15 @@
         <img class="logo" src="../../../../assets/images/logo.png" alt="Logo" (click)="goTo('/')" />
         <div class="ml-auto mr-5 ml-sm-5">
           <div ngbDropdown class="d-inline-block">
-            <button class="btn btn-lg btn-outline-secondary choice-language-btn" id="dropdownBasic1" ngbDropdownToggle>{{ language }}</button>
+            <button class="btn btn-lg btn-outline-secondary choice-language-btn" id="dropdownBasic1"
+              ngbDropdownToggle>{{ this.sharedService.language }}</button>
             <div class="options" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <button class="btn-outline-secondary" (click)="setLanguage('EN')" ngbDropdownItem>EN</button>
-              <button class="btn-outline-secondary" (click)="setLanguage('RU')" ngbDropdownItem>RU</button>
-              <button class="btn-outline-secondary" (click)="setLanguage('BY')" ngbDropdownItem>BY</button>
+              <button class=" btn-outline-secondary" (click)="this.sharedService.setLanguage('EN')"
+                ngbDropdownItem>EN</button>
+              <button class="btn-outline-secondary" (click)="this.sharedService.setLanguage('RU')"
+                ngbDropdownItem>RU</button>
+              <button class="btn-outline-secondary" (click)="this.sharedService.setLanguage('BY')"
+                ngbDropdownItem>BY</button>
             </div>
           </div>
         </div>
@@ -23,7 +27,8 @@
               <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/home')">Home</a>
             </li>
             <li class="nav-item" [class.active]="statePages.allDirectors">
-              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/allDirectors')">All directors</a>
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/allDirectors')">All
+                directors</a>
             </li>
             <li class="nav-item" [class.active]="statePages.workLog">
               <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/workLog')">Work log</a>

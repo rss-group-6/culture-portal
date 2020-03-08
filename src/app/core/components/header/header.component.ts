@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { IStatePages } from '@core/models/State-pages';
+import { SharedService } from '@shared/services/shared.service';
 
 @Component({
   selector: 'app-header',
@@ -8,14 +9,13 @@ import { IStatePages } from '@core/models/State-pages';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  public language = this.sharedService.language;
   public isMenuCollapsed = true;
-  public language: string;
   public statePages: IStatePages;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, public sharedService: SharedService) {}
 
   public ngOnInit(): void {
-    this.language = 'EN';
     this.statePages = {
       home: true,
       allDirectors: false,
@@ -29,9 +29,5 @@ export class HeaderComponent implements OnInit {
       this.statePages[page] = `/${page}` === url;
     }
     this.router.navigateByUrl(url);
-  }
-
-  public setLanguage(lang: string): void {
-    this.language = lang;
   }
 }
