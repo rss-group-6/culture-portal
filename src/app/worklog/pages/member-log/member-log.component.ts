@@ -10,10 +10,12 @@ import { SharedService } from '@shared/services/shared.service';
 })
 export class MemberLogComponent {
   public logs = GeneralLog;
-  public generalDifficulties =
-    GeneralLog[this.sharedService.language][this.worklogService.counter].difficultiesLn;
 
   constructor(public worklogService: WorklogService, public sharedService: SharedService) {}
+
+  public generalDifficulties(): string {
+    return GeneralLog[this.sharedService.language][this.worklogService.counter].difficultiesLn;
+  }
 
   public findItem(id: number): void {
     this.logs[this.sharedService.language][this.worklogService.counter].item[id - 1].completed = !this.logs[

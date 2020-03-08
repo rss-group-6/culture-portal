@@ -1,6 +1,6 @@
 <div class="container p-0">
   <span class="d-flex flex-column align-items-center mt-5 p-0" *ngIf="!this.worklogService.counter">
-    <p>{{generalDifficulties | uppercase}}</p>
+    <p>{{generalDifficulties() | uppercase}}</p>
     <ol class="">
       <li class="m-3" *ngFor="let log of logs[this.sharedService.language][this.worklogService.counter].difficulties">
         <p>{{log | uppercase}}</p>
