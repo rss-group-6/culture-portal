@@ -6,9 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { DevelopersListComponent } from './components/developers-list/developers-list.component';
 import { DeveloperItemComponent } from './components/developer-item/developer-item.component';
+import { DescriptionPortalComponent } from './components/description-portal/description-portal.component';
 
 @NgModule({
-  declarations: [HeaderComponent, HomePageComponent, DevelopersListComponent, DeveloperItemComponent],
+  declarations: [HeaderComponent, HomePageComponent, DevelopersListComponent, DeveloperItemComponent, DescriptionPortalComponent],
   imports: [CommonModule, SharedModule, NgbModule],
   exports: [SharedModule, HomePageComponent, HeaderComponent, DevelopersListComponent]
 })
