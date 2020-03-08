@@ -1,0 +1,47 @@
+.container {
+  max-width: 960px;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    border-bottom: 1px solid #83838394;
+    cursor: pointer;
+  }
+}
+
+span {
+  min-height: 4rem;
+  font-family: Raleway, 'sans-serif';
+}
+
+label {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a2c872;
+  cursor: pointer;
+}
+
+input {
+  opacity: 0;
+}
+
+input[type='checkbox']:checked + .checkmark {
+  background: URL(../../../../assets/images/check-mark.png);
+  background-size: 16px;
+  background-image: no-repeat;
+}
+
+@media screen and (max-width: 960px) {
+  span {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  span {
+    font-size: 1rem;
+  }
+}
