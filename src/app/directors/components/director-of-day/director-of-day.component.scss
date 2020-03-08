@@ -1,0 +1,14 @@
+.image {
+    max-width: 300px;
+}
+
+.more {
+    color: #A2C872;
+    border-color: #A2C872;
+    font-size: 1.7rem;
+    line-height: 2;
+    &:hover {
+        color: #ffffff;
+        background-color: #A2C872;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="container-fluid justify-content-center ">
+  <div class="row align-items-top justify-content-center no-gutters">
+      <div class="col image">
+        <img class="img-fluid" src=" {{ directors[0].photos[0] }}" width="300px" alt="{{ directors[0].name }}">
+      </div>
+      <div class="col-6 bg-light d-flex flex-column align-items-center justify-content-around">
+        <h1>{{ directors[0].name }}{{ directors[0].surname }}</h1>
+        <h3>{{ directors[0].yearsOfLife }}</h3>
+        <p>{{ directors[0].generalInfo }}</p>
+        <button type="button" class="btn btn-outline-primary more">Узнать больше</button>
+      </div>
+  </div>
+</div>
