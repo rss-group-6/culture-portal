@@ -5,34 +5,56 @@
         <img class="logo" src="../../../../assets/images/logo.png" alt="Logo" (click)="goTo('/')" />
         <div class="ml-auto mr-5 ml-sm-5">
           <div ngbDropdown class="d-inline-block">
-            <button class="btn btn-lg btn-outline-secondary choice-language-btn" id="dropdownBasic1" ngbDropdownToggle>{{ language }}</button>
+            <button
+              class="btn btn-lg btn-outline-secondary choice-language-btn"
+              id="dropdownBasic1"
+              ngbDropdownToggle
+            >
+              {{ language }}
+            </button>
             <div class="options" ngbDropdownMenu aria-labelledby="dropdownBasic1">
               <button class="btn-outline-secondary" (click)="setLanguage('EN')" ngbDropdownItem>EN</button>
               <button class="btn-outline-secondary" (click)="setLanguage('RU')" ngbDropdownItem>RU</button>
-              <button class="btn-outline-secondary" (click)="setLanguage('BY')" ngbDropdownItem>BY</button>
+              <button class="btn-outline-secondary" (click)="setLanguage('BE')" ngbDropdownItem>BY</button>
             </div>
           </div>
         </div>
 
-        <button class="navbar-toggler btn-secondary toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        <button
+          class="navbar-toggler btn-secondary toggler"
+          type="button"
+          (click)="isMenuCollapsed = !isMenuCollapsed"
+        >
           &#9776;
         </button>
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-          <ul class="navbar-nav col-9 col-md-7 ml-sm-auto mr-sm-0 mx-auto px-0 justify-content-between navigation">
-            <li class="nav-item" [class.active]="statePages.home">
-              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/home')">Home</a>
+          <ul
+            class="navbar-nav col-12 col-md-10 ml-sm-auto mr-sm-0 mx-auto px-0 justify-content-between navigation"
+          >
+            <li class="nav-item ml-4 d-flex align-items-center" [class.active]="statePages.home">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/home')">{{
+                'header.home' | translate
+              }}</a>
             </li>
-            <li class="nav-item" [class.active]="statePages.allDirectors">
-              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/allDirectors')">All directors</a>
+            <li class="nav-item ml-4 align-items-center" [class.active]="statePages.allDirectors">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/allDirectors')">{{
+                'header.allDirectors' | translate
+              }}</a>
             </li>
-            <li class="nav-item" [class.active]="statePages.workLog">
-              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/workLog')">Work log</a>
+            <li class="nav-item ml-4 align-items-center" [class.active]="statePages.workLog">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/workLog')">{{
+                'header.workLog' | translate
+              }}</a>
             </li>
-            <li class="nav-item" [class.active]="statePages.styleGuide">
-              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/styleGuide')">Style guide</a>
+            <li class="nav-item ml-4 align-items-center" [class.active]="statePages.styleGuide">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/styleGuide')">{{
+                'header.styleGuide' | translate
+              }}</a>
             </li>
-            <li class="nav-item" [class.active]="statePages.ourTeam">
-              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/ourTeam')">Our team</a>
+            <li class="nav-item ml-4 align-items-center" [class.active]="statePages.ourTeam">
+              <a class="nav-link text-center link" (click)="isMenuCollapsed = true; goTo('/ourTeam')">{{
+                'header.ourTeam' | translate
+              }}</a>
             </li>
           </ul>
         </div>

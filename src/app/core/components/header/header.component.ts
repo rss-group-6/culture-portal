@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { IStatePages } from '@core/models/State-pages';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
   public language: string;
   public statePages: IStatePages;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {}
 
   public ngOnInit(): void {
     this.language = 'EN';
@@ -23,6 +24,7 @@ export class HeaderComponent implements OnInit {
       styleGuide: false,
       ourTeam: false,
     };
+    this.translate.setDefaultLang('EN');
   }
 
   public goTo(url): void {
@@ -34,5 +36,6 @@ export class HeaderComponent implements OnInit {
 
   public setLanguage(lang: string): void {
     this.language = lang;
+    this.translate.use(lang);
   }
 }
