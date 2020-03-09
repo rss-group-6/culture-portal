@@ -7,10 +7,12 @@ import { HomePageComponent } from './pages/home/home-page.component';
 import { DescriptionPortalComponent } from './components/description-portal/description-portal.component';
 import { DirectorOfDayPageComponent } from './pages/director-of-day-page/director-of-day-page.component';
 import { DirectorOfDayComponent } from './components/director-of-day/director-of-day.component';
+import { GetRandomAuthorService } from './services/get-random-author.service';
 
 @NgModule({
   declarations: [HeaderComponent, HomePageComponent, DescriptionPortalComponent, DirectorOfDayComponent, DirectorOfDayPageComponent],
   imports: [CommonModule, SharedModule, NgbModule],
-  exports: [SharedModule, HomePageComponent, HeaderComponent]
+  exports: [SharedModule, HomePageComponent, HeaderComponent],
+  providers: [GetRandomAuthorService]
 })
 export class CoreModule {}
