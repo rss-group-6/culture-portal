@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="title">
+    <h1>Our team</h1>
+  </div>
+  <div class="row">
+    <app-developer-item
+      *ngFor="let developer of developers"
+      [developer]='developer'
+    ></app-developer-item>
+  </div><!-- /.row -->
+</div>
