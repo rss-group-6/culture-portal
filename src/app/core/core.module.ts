@@ -10,6 +10,7 @@ import { DirectorOfDayComponent } from './components/director-of-day/director-of
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { GetRandomAuthorService } from './services/get-random-author.service';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     }),
   ],
   exports: [SharedModule, HomePageComponent, HeaderComponent],
+  providers: [GetRandomAuthorService]
 })
 export class CoreModule {}
 
