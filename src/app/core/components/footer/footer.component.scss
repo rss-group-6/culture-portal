@@ -1,8 +1,13 @@
 :host {
   font-family: Raleway, sans-serif;
-  max-width: 1440px;
-  text-align: center;
+  width: 100%;
+  padding-top: 43px;
+  padding-bottom: 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   }
+
   h3 {
     font-size: 1.5rem;
   }
