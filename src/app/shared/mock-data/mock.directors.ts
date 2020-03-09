@@ -1,29 +1,11 @@
 import { Director } from '@shared/models/director';
-/*
-import mirovich1 from '../assets/images/mirovich1.jpg';
-import mirovich2 from '../assets/images/mirovich2.jpg';
-import mirovich3 from '../assets/images/mirovich3.jpg';
-import mirovich4 from '../assets/images/mirovich4.jpg';
-import mirovich5 from '../assets/images/mirovich5.jpg';
-
-import aleksandrovskaya1 from '../assets/images/aleksandrovskaya1.jpg';
-import aleksandrovskaya2 from '../assets/images/aleksandrovskaya2.jpg';
-import aleksandrovskaya3 from '../assets/images/aleksandrovskaya3.jpg';
-import aleksandrovskaya4 from '../assets/images/aleksandrovskaya4.jpg';
-import aleksandrovskaya5 from '../assets/images/aleksandrovskaya5.jpg';
-
-import lucenko1 from '../assets/images/lucenko1.jpg';
-import lucenko2 from '../assets/images/lucenko2.jpg';
-import lucenko3 from '../assets/images/lucenko3.jpg';
-import lucenko4 from '../assets/images/lucenko4.jpg';
-import lucenko5 from '../assets/images/lucenko5.jpg';
-*/
 
 export const Directors: Director[] = [
   {
     name: 'Евстигней',
     surname: 'Мирович',
     yearsOfLife: '29 июля [10 августа], 1878 - 25 февраля, 1952',
+    generalInfo: 'российский и белорусский советский актёр, режиссёр, драматург, педагог, профессор (1945). Народный артист Белорусской ССР (1940).',
     biography: [
       {
         date: '1900',
@@ -61,13 +43,11 @@ export const Directors: Director[] = [
       work: 'Чудесная дудка'
     }],
     photos: [
-      /*
-      mirovich1,
-      mirovich2,
-      mirovich3,
-      mirovich4,
-      mirovich5
-      */
+      '../assets/images/mirovich1.jpg',
+      '../assets/images/mirovich2.jpg',
+      '../assets/images/mirovich3.jpg',
+      '../assets/images/mirovich4.jpg',
+      '../assets/images/mirovich5.jpg'
     ],
     videos: ['https://www.youtube.com/watch?v=Yunms45xnog&feature=emb_logo'],
     placesOfActivity: [{
@@ -78,6 +58,7 @@ export const Directors: Director[] = [
   {
     name: 'Лариса',
     surname: 'Александровская',
+    generalInfo: 'белорусская, советская оперная певица (сопрано), режиссёр, публицист, общественный деятель. Народная артистка СССР (1940).',
     yearsOfLife: '2 февраля [15 февраля], 1902 - 23 мая, 1980',
     biography: [
       {
@@ -117,13 +98,11 @@ export const Directors: Director[] = [
       work: 'Пиковая дама'
     }],
     photos: [
-      /*
-      aleksandrovskaya1,
-      aleksandrovskaya2,
-      aleksandrovskaya3,
-      aleksandrovskaya4,
-      aleksandrovskaya5
-      */
+      '../assets/images/aleksandrovskaya1.jpg',
+      '../assets/images/aleksandrovskaya2.jpg',
+      '../assets/images/aleksandrovskaya3.jpg',
+      '../assets/images/aleksandrovskaya4.jpg',
+      '../assets/images/aleksandrovskaya5.jpg'
     ],
     videos: [
       'https://www.youtube.com/watch?v=v3LC9JtorMM',
@@ -138,7 +117,8 @@ export const Directors: Director[] = [
   {
     name: 'Борис',
     surname: 'Луценко',
-    yearsOfLife: '16 сентябряб 1937 - 5 февраля, 2020',
+    generalInfo: 'советский и белорусский режиссёр-постановщик театра и кино. Народный артист Республики Беларусь (1995). Заслуженный деятель искусств Белорусской ССР (1975).',
+    yearsOfLife: '16 сентября, 1937 - 5 февраля, 2020',
     biography: [
       {
         date: '1967',
@@ -181,13 +161,11 @@ export const Directors: Director[] = [
       work: 'Я. Купала «Сон на кургане»'
     }],
     photos: [
-      /*
-      lucenko1,
-      lucenko2,
-      lucenko3,
-      lucenko4,
-      lucenko5
-      */
+      '../assets/images/lucenko1.jpg',
+      '../assets/images/lucenko2.jpg',
+      '../assets/images/lucenko3.jpg',
+      '../assets/images/lucenko4.jpg',
+      '../assets/images/lucenko5.jpg'
     ],
     videos: [
       'https://www.youtube.com/watch?v=wM-HkQ59usY',

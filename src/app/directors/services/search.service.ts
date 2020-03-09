@@ -8,7 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class SearchService {
 
-  public arrOfDirectors: Director[] = Directors.concat(Directors);
+  public arrOfDirectors: Director[] = Directors;
 
   public subjectSearch: BehaviorSubject<Director[]>;
   public observeSearch: Observable<Director[]>;

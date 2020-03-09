@@ -2,6 +2,7 @@ export interface Director {
     name: string,
     surname: string,
     yearsOfLife: string,
+    generalInfo: string,
     biography: {
         date: string,
         content: string
@@ -10,7 +11,7 @@ export interface Director {
         date: string,
         work: string
     }[],
-    photos: any[],
+    photos: string[],
     videos: string[],
     placesOfActivity: {
         activity: string,

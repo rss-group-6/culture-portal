@@ -1,0 +1,39 @@
+:host {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #6c757d;
+
+  &:hover {
+    color:#a2c872;
+  }
+}
+
+img {
+  margin: 25px 0;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+}
+
+img:hover {
+  transition: filter .7s ease-in-out;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.developer {
+  margin: 20px 0 0 10px;
+}
+
+button { 
+  margin: 5px 5px 5px 5px 
+}
+
+.centered {
+  margin: 0 auto;
+}

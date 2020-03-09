@@ -3,4 +3,5 @@ export interface IStatePages {
   allDirectors: boolean;
   workLog: boolean;
   styleGuide: boolean;
+  ourTeam: boolean;
 }
