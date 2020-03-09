@@ -38,11 +38,9 @@ export class AllDirectorsComponent implements OnInit, AfterViewInit {
           return '';
         }
       }),
-      // filter(inputStr => inputStr.length > 2),
       debounceTime(500)
     ).subscribe(
       str => {
-        console.log('str' + str);
         this.searchService.getSearchResult(str);
       }
     );

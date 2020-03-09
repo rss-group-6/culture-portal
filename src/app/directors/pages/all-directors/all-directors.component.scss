@@ -5,5 +5,12 @@
 }
 
 .search-input{
-  margin-bottom: 20px;
+  margin:5px auto 20px;
+  max-width: 500px;
+}
+
+.card-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
