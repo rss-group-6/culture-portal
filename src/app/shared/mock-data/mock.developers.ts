@@ -10,7 +10,7 @@ import popova from '../assets/images/developers/popova.jfif';
 export const Developers: Developer[] = [
 {
   name: 'Evgeny',
-  surname: "Kravchenko",
+  surname: 'Kravchenko',
   photo: kravchenko,
   github: 'https://github.com/Evgeny-Kravchenko',
   telegram: 'https://t.me/k1696',
@@ -18,7 +18,7 @@ export const Developers: Developer[] = [
 },
 {
   name: 'Ekaterina',
-  surname: "Lysiuk",
+  surname: 'Lysiuk',
   photo: lysiuk,
   github: 'https://github.com/ekater1na',
   telegram: 'https://t.me/ObsssQ',
@@ -26,7 +26,7 @@ export const Developers: Developer[] = [
 },
 {
   name: 'Mikhail',
-  surname: "Sidarkevich",
+  surname: 'Sidarkevich',
   photo: sidarkevich,
   github: 'https://github.com/chivekrodis',
   telegram: 'string',
@@ -34,7 +34,7 @@ export const Developers: Developer[] = [
 },
 {
   name: 'Mikhail',
-  surname: "Shcheglakov",
+  surname: 'Shcheglakov',
   photo: shcheglakov,
   github: 'https://github.com/madmike85',
   telegram: 'https://t.me/MikhailShcheglakov',
@@ -42,7 +42,7 @@ export const Developers: Developer[] = [
 },
 {
   name: 'Maria',
-  surname: "Golomb",
+  surname: 'Golomb',
   photo: golomb,
   github: 'https://github.com/mariagolomb',
   telegram: 'https://t.me/MariaGolomb',
@@ -50,7 +50,7 @@ export const Developers: Developer[] = [
 },
 {
   name: 'Anastasiya',
-  surname: "Popova",
+  surname: 'Popova',
   photo: popova,
   github: 'https://github.com/a-popova',
   telegram: 'https://t.me/anastasiya2810',
