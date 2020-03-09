@@ -22,7 +22,7 @@ export const Developers: Developer[] = [
   surname: 'Sidarkevich',
   photo: '../assets/images/developers/sidarkevich.png',
   github: 'https://github.com/chivekrodis',
-  telegram: 'string',
+  telegram: 'https://t.me/chivekrodis',
   worklog: '10%'
 },
 {
