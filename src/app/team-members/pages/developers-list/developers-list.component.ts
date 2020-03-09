@@ -9,7 +9,7 @@ import { Developers } from '@shared/mock-data/mock.developers';
 })
 export class DevelopersListComponent implements OnInit {
 
-  developers: Developer[] = Developers
+  developers: Developer[] = Developers;
 
   constructor() { }
 

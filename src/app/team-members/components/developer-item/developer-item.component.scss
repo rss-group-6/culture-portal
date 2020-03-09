@@ -1,6 +1,7 @@
 :host {
   text-align: center;
   margin: 0 auto;
+  font-size: 2.5rem;
 }
 
 a {
@@ -14,9 +15,9 @@ a {
 }
 
 img {
-  margin-bottom: 10px;
-  -webkit-filter: grayscale(80%);
-  filter: grayscale(80%);
+  margin: 25px 0;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
 }
 
 img:hover {
@@ -24,3 +25,9 @@ img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
+
+.developer {
+  margin: 20px 0;
+}
+
+button { margin: 5px 5px 5px 5px }
