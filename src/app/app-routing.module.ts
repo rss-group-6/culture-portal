@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'styleGuide',
     loadChildren: () => import('./styleguide/styleguide.module').then(m => m.StyleGuideModule),
+  },
+  {
+    path: 'ourTeam',
+    loadChildren: () => import('./team-members/team-members.module').then(m => m.TeamMembersModule),
   }
 ];
 

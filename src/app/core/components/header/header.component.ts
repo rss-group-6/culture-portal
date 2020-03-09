@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
       allDirectors: false,
       workLog: false,
       styleGuide: false,
+      ourTeam: false,
     };
   }
 
