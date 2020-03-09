@@ -12,6 +12,14 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { GetRandomAuthorService } from './services/get-random-author.service';
 
+const ModuleTranslate = TranslateModule.forRoot({
+  loader: {
+    provide: TranslateLoader,
+    useFactory: HttpLoaderFactory,
+    deps: [HttpClient],
+  },
+});
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -20,21 +28,9 @@ import { GetRandomAuthorService } from './services/get-random-author.service';
     DirectorOfDayComponent,
     DirectorOfDayPageComponent,
   ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    NgbModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
-  ],
-  exports: [SharedModule, HomePageComponent, HeaderComponent],
-  providers: [GetRandomAuthorService]
+  imports: [CommonModule, SharedModule, NgbModule, HttpClientModule, ModuleTranslate],
+  exports: [SharedModule, HomePageComponent, HeaderComponent, TranslateModule],
+  providers: [GetRandomAuthorService],
 })
 export class CoreModule {}
 
