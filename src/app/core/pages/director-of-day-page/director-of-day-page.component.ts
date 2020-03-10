@@ -15,7 +15,7 @@ export class DirectorOfDayPageComponent implements OnInit {
       (director) => {
         this.author = director;
       }
-    )
+    );
   }
 
   ngOnInit(): void {

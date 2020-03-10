@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DeveloperItemComponent implements OnInit {
 
-  @Input() developer
+  @Input() developer;
 
   constructor() { }
 

@@ -12,7 +12,8 @@ import { Error404Component } from './components/error404/error404.component';
 import { Error404pageComponent } from './pages/error404page/error404page.component';
 
 @NgModule({
-  declarations: [HeaderComponent, HomePageComponent, DescriptionPortalComponent, DirectorOfDayComponent, DirectorOfDayPageComponent, Error404Component, Error404pageComponent],
+  declarations: [HeaderComponent, HomePageComponent, DescriptionPortalComponent,
+    DirectorOfDayComponent, DirectorOfDayPageComponent, Error404Component, Error404pageComponent],
   imports: [CommonModule, SharedModule, NgbModule],
   exports: [SharedModule, HomePageComponent, HeaderComponent],
   providers: [GetRandomAuthorService]
