@@ -1,6 +1,6 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 import { Director } from '@shared/models/director';
-
 
 @Component({
   selector: 'app-director-card',
@@ -11,9 +11,14 @@ export class DirectorCardComponent implements OnInit {
 
   @Input() public director: Director;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public handleClick() {
+    this.router.navigate[ /* '', */ this.director.id];
+
   }
 
 }
