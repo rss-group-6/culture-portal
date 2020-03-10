@@ -1,0 +1,18 @@
+    <div>
+      <img src="{{developer.photo}}" alt="{{developer.surname}} photo" class="bd-placeholder-img rounded-circle" width="200" height="200">
+
+      <div class="developer"><a class="text-center" href="{{developer.github}}" role="button"><h2> {{ developer.name }} {{ developer.surname }}</h2></a></div>
+      <div>{{developer.worklog}}</div>
+
+      <div class="row justify-content-center">
+        <form action={{developer.github}} target="_blank">
+          <button class="btn btn-outline-secondary" role="button">Github »</button>
+        </form>
+
+        <form action={{developer.telegram}} target="_blank">
+          <button class="btn btn-outline-secondary" role="button">Telegram »</button>
+        </form>
+      </div>
+
+      </div>
+
