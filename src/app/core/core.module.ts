@@ -11,6 +11,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { GetRandomAuthorService } from './services/get-random-author.service';
+import { LanguageService } from '@core/services/language.service';
 
 const ModuleTranslate = TranslateModule.forRoot({
   loader: {
@@ -18,6 +19,7 @@ const ModuleTranslate = TranslateModule.forRoot({
     useFactory: HttpLoaderFactory,
     deps: [HttpClient],
   },
+  isolate: true,
 });
 
 @NgModule({
@@ -30,10 +32,10 @@ const ModuleTranslate = TranslateModule.forRoot({
   ],
   imports: [CommonModule, SharedModule, NgbModule, HttpClientModule, ModuleTranslate],
   exports: [SharedModule, HomePageComponent, HeaderComponent, TranslateModule],
-  providers: [GetRandomAuthorService],
+  providers: [GetRandomAuthorService, LanguageService],
 })
 export class CoreModule {}
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/core/', '.json');
 }
