@@ -21,11 +21,10 @@ export class SearchService {
   public getCurrentLenguage() { }
 
   private searchByQuery(query: string) {
-    // add city/place of birth
-    // add lng
     const queryStr: string = query.toLowerCase();
-    return this.arrOfDirectors.filter(director => director.name.toLowerCase().includes(queryStr) ||
-      director.surname.toLowerCase().includes(queryStr)
+    return this.arrOfDirectors.filter(director => director.name.toLowerCase().includes(queryStr)
+      || director.surname.toLowerCase().includes(queryStr)
+      || director.birthPlace.toLowerCase().includes(queryStr)
     );
   }
 

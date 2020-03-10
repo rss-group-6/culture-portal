@@ -167,19 +167,11 @@ export const Directors: Director[] = [
       work: 'Я. Купала «Сон на кургане»'
     }],
     photos: [
-<<<<<<< HEAD
       '../assets/images/lucenko1.jpg',
       '../assets/images/lucenko2.jpg',
       '../assets/images/lucenko3.jpg',
       '../assets/images/lucenko4.jpg',
       '../assets/images/lucenko5.jpg'
-=======
-        '../assets/images/lucenko1.jpg',
-        '../assets/images/lucenko2.jpg',
-        '../assets/images/lucenko3.jpg',
-        '../assets/images/lucenko4.jpg',
-        '../assets/images/lucenko5.jpg'
->>>>>>> master
     ],
     videos: [
       'https://www.youtube.com/watch?v=wM-HkQ59usY',
