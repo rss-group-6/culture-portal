@@ -9,13 +9,12 @@ import { Subject, Observable } from 'rxjs';
 export class GetRandomAuthorService {
   public directors: Director[] = Directors;
   public author: Subject<Director> = new Subject<Director>();
-  
   public author$: Observable<Director> = this.author.asObservable();
 
   constructor() { }
 
   public getAuthor(): void {
-    let director = this.directors[Math.floor(Math.random() * this.directors.length)];
+    const director = this.directors[Math.floor(Math.random() * this.directors.length)];
     this.author.next(director);
   }
 }
