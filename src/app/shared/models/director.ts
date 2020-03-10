@@ -10,12 +10,12 @@ export interface Director {
     content: string;
   }[];
   listOfWorks: {
-    date: string;
+    date?: string;
     work: string;
   }[];
   photos: string[];
-  videos: string[];
-  placesOfActivity: {
+  videos?: string[];
+  placesOfActivity?: {
     activity: string;
     mapLink: string;
   }[];
