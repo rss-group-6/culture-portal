@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from '@core/pages/home/home-page.component';
+import { Error404pageComponent } from '@core/pages/error404page/error404page.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'ourTeam',
     loadChildren: () => import('./team-members/team-members.module').then(m => m.TeamMembersModule),
+  },
+  {
+    path: '**',
+    component: Error404pageComponent
   }
 ];
 

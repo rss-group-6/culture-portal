@@ -11,9 +11,11 @@ export class DirectorOfDayPageComponent implements OnInit {
   public author: Director;
 
   constructor(private service: GetRandomAuthorService) {
-    this.service.author$.subscribe(director => {
-      this.author = director;
-    });
+    this.service.author$.subscribe(
+      (director) => {
+        this.author = director;
+      }
+    );
   }
 
   public ngOnInit(): void {

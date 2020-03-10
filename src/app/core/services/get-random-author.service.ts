@@ -9,7 +9,6 @@ import { Subject, Observable } from 'rxjs';
 export class GetRandomAuthorService {
   public directors: Director[] = Directors;
   public author: Subject<Director> = new Subject<Director>();
-
   public author$: Observable<Director> = this.author.asObservable();
 
   constructor() { }
