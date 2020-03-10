@@ -5,7 +5,7 @@ import { Director } from '@shared/models/director';
 @Component({
   selector: 'app-director-of-day-page',
   templateUrl: './director-of-day-page.component.html',
-  styleUrls: ['./director-of-day-page.component.scss']
+  styleUrls: ['./director-of-day-page.component.scss'],
 })
 export class DirectorOfDayPageComponent implements OnInit {
   public author: Director;
@@ -18,8 +18,7 @@ export class DirectorOfDayPageComponent implements OnInit {
     );
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.service.getAuthor();
   }
-
 }
