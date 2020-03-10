@@ -1,22 +1,22 @@
 export interface Director {
-    name: string,
-    surname: string,
-    id: string,
-    yearsOfLife: string,
-    birthPlace: string,
-    generalInfo: string,
+    name: string;
+    surname: string;
+    id: string;
+    yearsOfLife: string;
+    birthPlace: string;
+    generalInfo: string;
     biography: {
-        date: string,
+        date: string;
         content: string
-    }[],
+    }[];
     listOfWorks: {
-        date?: string,
+        date?: string;
         work: string
-    }[],
-    photos: string[],
-    videos?: string[],
+    }[];
+    photos: string[];
+    videos?: string[];
     placesOfActivity?: {
-        activity: string,
+        activity: string;
         mapLink: string
-    }[]
+    }[];
 }
