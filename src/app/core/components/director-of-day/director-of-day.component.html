@@ -1,12 +1,13 @@
 <div class="container-fluid justify-content-center mt-5 mb-5">
   <div class="author row align-items-top justify-content-center no-gutters">
       <div class="image col">
-        <img class="img-fluid" src=" {{ director.photos[0] }}" width="300px" alt="{{ director.name }} {{ director.surname }}">
+        <img class="img-fluid" src=" {{ directors[director].photos[0] }}"
+        width="300px" alt="{{ directors[director].name | translate }} {{ directors[director].surname | translate}}">
       </div>
       <div class="info col-6 px-5 bg-light d-flex flex-column align-items-center justify-content-around">
-        <h1>{{ director.name }} {{ director.surname }}</h1>
-        <h3>{{ director.yearsOfLife }}</h3>
-        <p class="generalInfo">{{ director.generalInfo }}</p>
+        <h1>{{ directors[director].name | translate }} {{ directors[director].surname | translate }}</h1>
+        <h3>{{ directors[director].yearsOfLife | translate }}</h3>
+        <p class="generalInfo">{{ directors[director].generalInfo | translate }}</p>
         <button type="button" class="btn btn-outline-primary more">Узнать больше</button>
       </div>
   </div>
