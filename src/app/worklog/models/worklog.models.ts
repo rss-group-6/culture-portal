@@ -29,7 +29,7 @@ export interface WorkLog {
 export const GeneralLog: WorkLog = {
   EN: [
     {
-      name: 'GENERAL',
+      name: 'general work log',
       difficultiesLn: 'difficulties during create project',
       difficulties: [
         'find time to develop a project',
@@ -527,7 +527,7 @@ export const GeneralLog: WorkLog = {
       ],
     },
     {
-      name: 'еўгеній краўчанка',
+      name: 'яўген краўчанка',
       item: [
         {
           id: 1,
