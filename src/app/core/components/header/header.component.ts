@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { IStatePages } from '@core/models/State-pages';
 import { TranslateService } from '@ngx-translate/core';
@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   public ngOnInit(): void {
+    this.language = 'EN';
     this.statePages = {
       home: true,
       allDirectors: false,

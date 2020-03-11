@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { GeneralLog } from '../../models/worklog.models';
 import { WorklogService } from '../../services/worklog.service';
-import { SharedService } from '@shared/services/shared.service';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '@core/services/language.service';
 
 @Component({
   selector: 'app-member-log',
@@ -10,16 +11,25 @@ import { SharedService } from '@shared/services/shared.service';
 })
 export class MemberLogComponent {
   public logs = GeneralLog;
+  public counter = this.worklogService.counter;
 
-  constructor(public worklogService: WorklogService, public sharedService: SharedService) {}
+  constructor(
+    public worklogService: WorklogService,
+    public translate: TranslateService,
+    private languageService: LanguageService,
+  ) {
+    this.languageService.getLanguage().subscribe(lang => {
+      this.translate.use(lang);
+    });
+  }
 
   public generalDifficulties(): string {
-    return GeneralLog[this.sharedService.language][this.worklogService.counter].difficultiesLn;
+    return GeneralLog[this.translate.currentLang][this.worklogService.counter].difficultiesLn;
   }
 
   public findItem(id: number): void {
-    this.logs[this.sharedService.language][this.worklogService.counter].item[id - 1].completed = !this.logs[
-      this.sharedService.language
+    this.logs[this.translate.currentLang][this.worklogService.counter].item[id - 1].completed = !this.logs[
+      this.translate.currentLang
     ][this.worklogService.counter].item[id - 1].completed;
   }
 
@@ -50,7 +60,7 @@ export class MemberLogComponent {
       case 'EN':
         !this.worklogService.counter ? (total = `Total: ${acc} pt`) : (total = `Total: ${acc} hr`);
         break;
-      case 'BY':
+      case 'BE':
         !this.worklogService.counter ? (total = `Усяго: ${acc} балаў`) : (total = `Усяго: ${acc} гадзін(ы)`);
         break;
     }

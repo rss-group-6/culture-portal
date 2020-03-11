@@ -18,7 +18,7 @@ export interface WorkLog {
     difficulties?: string[];
     item: Item[];
   }[];
-  BY: {
+  BE: {
     name: string;
     difficultiesLn?: string;
     difficulties?: string[];
@@ -75,7 +75,7 @@ export const GeneralLog: WorkLog = {
           title: `Design (typography, icons, colors, links + buttons + input, ui components are styled)`,
           completed: true,
         },
-        { id: 13, points: '10', title: `Material-ui / bootstrap is used`, completed: true },
+        { id: 13, points: '20', title: `Material-ui / bootstrap is used`, completed: true },
         { id: 14, points: '10', title: `Portal has third language`, completed: true },
 
         { id: 15, points: '10', title: `Confidence of the project presentation`, completed: true },
@@ -288,7 +288,7 @@ export const GeneralLog: WorkLog = {
           title: `Дизайн (типографика, значки, цвета, ссылки + кнопки + ввод, стилизованы компоненты пользовательского интерфейса)`,
           completed: true,
         },
-        { id: 13, points: '10', title: `Используется material-ui / bootstrap`, completed: true },
+        { id: 13, points: '20', title: `Используется material-ui / bootstrap`, completed: true },
         { id: 14, points: '10', title: `Портал имеет третий язык`, completed: true },
 
         { id: 15, points: '10', title: `Уверенная презентация проекта`, completed: true },
@@ -447,9 +447,15 @@ export const GeneralLog: WorkLog = {
       ],
     },
   ],
-  BY: [
+  BE: [
     {
       name: 'Агульны працоўны часопіс',
+      difficultiesLn: 'Цяжкасці пры распрацоўцы праекта',
+      difficulties: [
+        'Знайсці час на распрацоўку праекта',
+        'Пераклад дадзеных на розныя мовы',
+        'Разбраться ва ўнутраным прыладзе працы Ng-bootstrap',
+      ],
       item: [
         {
           id: 1,
@@ -494,7 +500,7 @@ export const GeneralLog: WorkLog = {
           title: `Дызайн (тыпаграфікі, значкі, колеру, спасылкі + кнопкі + ўвод, стылізаваныя кампаненты карыстацкага інтэрфейсу)`,
           completed: true,
         },
-        { id: 13, points: '10', title: `Выкарыстоўваецца Material-ui / bootstrap`, completed: true },
+        { id: 13, points: '20', title: `Выкарыстоўваецца Material-ui / bootstrap`, completed: true },
         { id: 14, points: '10', title: `Партал мае тры мовы`, completed: true },
 
         { id: 15, points: '10', title: `Упэўненая прэзентацыя праекта`, completed: true },
