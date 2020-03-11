@@ -8,7 +8,7 @@ import { Director } from '@shared/models/director';
   styleUrls: ['./director-of-day-page.component.scss'],
 })
 export class DirectorOfDayPageComponent implements OnInit {
-  public author: number;
+  public author: Director;
 
   constructor(private service: GetRandomAuthorService) {
     this.service.author$.subscribe(
