@@ -1,0 +1,16 @@
+p {
+    font-family: Raleway, sans-serif;
+    color: #A2C872;
+    &.oops {
+        font-size: 32px;
+    }
+    &.text {
+        font-size: 26px;
+    }
+}
+
+img {
+    filter: grayscale(80%);
+    max-width: 50%;
+    height: auto;
+}
