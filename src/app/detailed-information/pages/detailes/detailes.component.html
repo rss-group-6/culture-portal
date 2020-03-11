@@ -1,0 +1,9 @@
+<h1>{{ director.name }}</h1>
+<p>{{ director.yearsOfLife }}</p>
+<img [src]="director.photos[0]" alt="" />
+<ul>
+  <li *ngFor="let work of director.listOfWorks">
+    <span>{{ work.date }}</span
+    ><span>{{ work.work }}</span>
+  </li>
+</ul>
