@@ -7,5 +7,6 @@ import { Director } from '@shared/models/director';
   styleUrls: ['./director-of-day.component.scss'],
 })
 export class DirectorOfDayComponent {
-  @Input() public director: number;
+  @Input() public number: number;
+  public director: string = `director${this.number}`;
 }
