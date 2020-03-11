@@ -13,6 +13,8 @@ import { SearchService } from '../../services/search.service';
 
 export class AllDirectorsComponent implements OnInit, AfterViewInit {
 
+  public search: string = 'Search';
+
   public allDirectors: Director[];
   public input: Observable<Event>;
   @ViewChild('searchQuery') public searchQuery: ElementRef;
