@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Developer } from '@shared/models/developer';
-import { Developers } from '@shared/mock-data/mock.developers';
+import { Developers } from '@shared/mock-data/mock.developersEN';
 
 @Component({
   selector: 'app-developers-list',

@@ -1,3 +1,14 @@
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75)
+  }
+  100% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+    }
+}
+
 :host {
   text-align: center;
   margin: 0 auto;
@@ -18,14 +29,17 @@ img {
   margin: 25px 0;
   -webkit-filter: grayscale(70%);
   filter: grayscale(70%);
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 3s 1;
 }
+
+
 
 img:hover {
   transition: filter .7s ease-in-out;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-
 .developer {
   margin: 20px 0 0 10px;
 }
