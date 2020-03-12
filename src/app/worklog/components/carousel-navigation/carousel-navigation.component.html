@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center p-0 wrapper" (click)="this.worklogService.getCurrentMember($event)">
+  <ngb-carousel class="d-flex align-items-center" interval="0">
+    <ng-template ngbSlide *ngFor="let member of ('name' | translate)">
+      <div class="picsum-img-wrapper m-0">
+        <p class="d-flex m-0" [innerHtml]="('name' | translate)[this.worklogService.counter] | translate | uppercase">
+        </p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class LanguageService {
-  public subject: Subject<string> = new Subject<string>();
+  public subject: BehaviorSubject<string> = new BehaviorSubject<string>('EN');
 
   public setLanguage(lang: string): void {
     this.subject.next(lang);
