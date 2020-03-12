@@ -11,13 +11,13 @@
       "Cards": "Карточки"
     },
     "content": {
-      "Colors": "Контэнт",
-      "Typography": "Контэнт",
-      "Inputs": "Контэнт",
-      "Buttons": "Контэнт",
-      "CheckBox": "Контэнт",
-      "Table": "Контэнт",
-      "Cards": "Контэнт"
+      "Colors": "Контент",
+      "Typography": "Контент",
+      "Inputs": "Контент",
+      "Buttons": "Контент",
+      "CheckBox": "Контент",
+      "Table": "Контент",
+      "Cards": "Контент"
     }
 }
 }
