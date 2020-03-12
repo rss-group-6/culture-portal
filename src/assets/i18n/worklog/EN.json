@@ -1,0 +1,6 @@
+{
+  "MainPage": "Main page + page with a list of authors + author's page (only pages with content without widgets)",
+  "teamPage": "Page with team members + page with worklog",
+  "typography": "Add typography to project",
+  "bootstrap": "Add bootstrap to project"
+}

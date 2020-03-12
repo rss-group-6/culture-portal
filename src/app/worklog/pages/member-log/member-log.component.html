@@ -16,7 +16,7 @@
         <input class="ml-3" id="{{log.id}}" type="checkbox" [checked]="log.completed" (change)="findItem(log.id)">
         <label class="checkmark ml-3" for="{{log.id}}"></label>
         <strong class="pl-4 mr-3 text-nowrap">{{log.points}}</strong>
-        {{log.title | uppercase}}
+        {{log.name | translate}}
       </span>
     </li>
   </ul>

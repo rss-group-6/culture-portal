@@ -3,6 +3,7 @@ export interface Item {
   points: string;
   title: string;
   completed: boolean;
+  name?: string;
 }
 
 export interface WorkLog {
@@ -42,12 +43,14 @@ export const GeneralLog: WorkLog = {
           points: '10',
           title: `Main page + page with a list of authors + author's page (only pages with content without widgets)`,
           completed: true,
+          name: 'MainPage',
         },
         {
           id: 2,
           points: '10',
           title: `Page with team members + page with worklog`,
           completed: true,
+          name: 'teamPage',
         },
         {
           id: 3,
@@ -61,7 +64,7 @@ export const GeneralLog: WorkLog = {
           title: `Portal has two languages`,
           completed: true,
         },
-        { id: 5, points: '20', title: `Portal has page with style guide`, completed: true },
+        { id: 5, points: '20', title: `Portal has page with style guide`, completed: true, },
         { id: 6, points: '10', title: `Mobile version is okay`, completed: true },
         { id: 7, points: '10', title: `Ipad/tablet version is okay`, completed: true },
         { id: 8, points: '10', title: `Author's page contains timeline`, completed: true },
@@ -110,12 +113,14 @@ export const GeneralLog: WorkLog = {
           points: '0.5 hr',
           title: 'Add typography to project',
           completed: false,
+          name: 'typography'
         },
         {
           id: 2,
           points: '0.5 hr',
           title: 'Add bootstrap to project',
           completed: true,
+          name: 'bootstrap'
         },
         {
           id: 3,

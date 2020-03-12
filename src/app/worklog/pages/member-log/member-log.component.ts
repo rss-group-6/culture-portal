@@ -2,16 +2,31 @@ import { Component, OnInit } from '@angular/core';
 import { GeneralLog } from '../../models/worklog.models';
 import { WorklogService } from '../../services/worklog.service';
 import { SharedService } from '@shared/services/shared.service';
+import { LanguageService } from '@core/services/language.service';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-member-log',
   templateUrl: './member-log.component.html',
   styleUrls: ['./member-log.component.scss'],
 })
-export class MemberLogComponent {
+export class MemberLogComponent implements OnInit{
   public logs = GeneralLog;
 
-  constructor(public worklogService: WorklogService, public sharedService: SharedService) {}
+  constructor(
+    public worklogService: WorklogService,
+    public sharedService: SharedService,
+    private languageService: LanguageService,
+    private translate: TranslateService,
+  ) {
+    this.languageService.getLanguage().subscribe(lang => {
+      this.translate.use(lang);
+    })
+  }
+
+  public ngOnInit(): void {
+    this.translate.setDefaultLang('EN');
+  }
 
   public generalDifficulties(): string {
     return GeneralLog[this.sharedService.language][this.worklogService.counter].difficultiesLn;
