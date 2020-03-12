@@ -1,6 +1,5 @@
 <div class="container-fluid justify-content-center wrapper content-wrapper">
-  <input class="form-control search-input" type="text" placeholder="{{('directors.search') | translate}}" #searchQuery>
-  <div> {{("directors.search") | translate}} </div>
+  <input class="form-control search-input" type="text" placeholder="{{ 'directors.search' | translate }}" #searchQuery>
 
   <div class="card-wrapper">
     <app-director-card *ngFor="let director of allDirectors" [director]="director"></app-director-card>
