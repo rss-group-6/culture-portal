@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WorkLogRoutingModule } from './worklog-routing.module';
+
+import { WorklogComponent } from './components/worklog/worklog.component';
+import { MemberLogComponent } from './pages/member-log/member-log.component';
+import { CarouselNavigationComponent } from './components/carousel-navigation/carousel-navigation.component';
+
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -15,8 +21,8 @@ const ModuleTranslate = TranslateModule.forChild({
 });
 
 @NgModule({
-  declarations: [],
-  imports: [CommonModule, WorkLogRoutingModule, ModuleTranslate],
+  declarations: [WorklogComponent, MemberLogComponent, CarouselNavigationComponent],
+  imports: [CommonModule, WorkLogRoutingModule, ModuleTranslate, NgbModule],
 })
 export class WorkLogModule {}
 

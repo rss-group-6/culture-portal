@@ -1,0 +1,57 @@
+.wrapper {
+  width: 100%;
+  background-color: #a2c872;
+}
+
+ngb-carousel {
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  font-family: Raleway, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #000;
+  outline: none;
+  & div > p {
+    animation: woble linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+  }
+}
+
+.picsum-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  div > p {
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+  }
+}
+
+@keyframes woble {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  15% {
+    transform: translate(-25px, 0px);
+  }
+  30% {
+    transform: translate(20px, 0px);
+  }
+  45% {
+    transform: translate(-15px, 0px);
+  }
+  60% {
+    transform: translate(10px, 0px);
+  }
+  75% {
+    transform: translate(-5px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
