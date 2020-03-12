@@ -1,0 +1,23 @@
+{   "descrPortal":
+  { "name": "Style Guide"},
+"item": {
+    "name" : {
+      "Colors": "Colors",
+      "Typography": "Typography",
+      "Inputs": "Inputs",
+      "Buttons": "Buttons",
+      "CheckBox": "CheckBox",
+      "Table": "Table",
+      "Cards": "Cards"
+    },
+    "content": {
+      "Colors": "Content",
+      "Typography": "Content",
+      "Inputs": "Content",
+      "Buttons": "Content",
+      "CheckBox": "Content",
+      "Table": "Content",
+      "Cards": "Content"
+    }
+}
+}

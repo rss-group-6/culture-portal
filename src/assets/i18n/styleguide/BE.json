@@ -1,1 +1,23 @@
-
+{   "descrPortal":
+  { "name": "Стайл Гайд"},
+"item": {
+    "name" : {
+      "Colors": "Каляры",
+      "Typography": "Шрыфты",
+      "Inputs": "Iнпуты",
+      "Buttons": "Кнопкi",
+      "CheckBox": "Чэкбоксы",
+      "Table": "Таблiцы",
+      "Cards": "Карткi"
+    },
+    "content": {
+      "Colors": "Кантэнт",
+      "Typography": "Кантэнт",
+      "Inputs": "Кантэнт",
+      "Buttons": "Кантэнт",
+      "CheckBox": "Кантэнт",
+      "Table": "Кантэнт",
+      "Cards": "Кантэнт"
+    }
+}
+}
