@@ -1,1 +1,11 @@
-<p>style-list works!</p>
+<div class="container">
+  <div class="title">
+    <h1>{{ 'descrPortal.name' | translate}}</h1>
+  </div>
+  <div class="column">
+    <app-style-guide
+      *ngFor="let item of styleItems"
+      [item]='item'
+    ></app-style-guide>
+  </div>
+</div>

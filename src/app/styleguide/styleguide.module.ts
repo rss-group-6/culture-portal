@@ -5,6 +5,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
+import { StyleListComponent } from './pages/style-list/style-list.component';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -16,7 +17,7 @@ const ModuleTranslate = TranslateModule.forChild({
 });
 
 @NgModule({
-  declarations: [StyleGuideComponent],
+  declarations: [StyleGuideComponent, StyleListComponent],
   imports: [CommonModule, StyleGuideRoutingModule, ModuleTranslate],
 })
 export class StyleGuideModule {}
