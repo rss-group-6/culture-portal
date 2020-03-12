@@ -1,36 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { GeneralLog } from '../../models/worklog.models';
 import { WorklogService } from '../../services/worklog.service';
-import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '@core/services/language.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-member-log',
   templateUrl: './member-log.component.html',
   styleUrls: ['./member-log.component.scss'],
 })
-export class MemberLogComponent {
+export class MemberLogComponent implements OnInit {
   public logs = GeneralLog;
   public counter = this.worklogService.counter;
 
   constructor(
     public worklogService: WorklogService,
-    public translate: TranslateService,
     private languageService: LanguageService,
+    public translate: TranslateService,
   ) {
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
     });
   }
 
-  public generalDifficulties(): string {
-    return GeneralLog[this.translate.currentLang][this.worklogService.counter].difficultiesLn;
+  public ngOnInit(): void {
+    this.translate.setDefaultLang('EN');
   }
 
   public findItem(id: number): void {
-    this.logs[this.translate.currentLang][this.worklogService.counter].item[id - 1].completed = !this.logs[
-      this.translate.currentLang
-    ][this.worklogService.counter].item[id - 1].completed;
+    this.logs[this.worklogService.counter].item[id - 1].completed = !this.logs[this.worklogService.counter]
+      .item[id - 1].completed;
   }
 
   public calculateTotal(language: string): string {
@@ -38,7 +37,7 @@ export class MemberLogComponent {
     let total: string;
 
     if (this.worklogService.counter === 0) {
-      this.logs[language][this.worklogService.counter].item.map(e => {
+      this.logs[this.worklogService.counter].item.map(e => {
         if (e.completed) {
           acc += +e.points;
         }
@@ -46,7 +45,7 @@ export class MemberLogComponent {
     }
 
     if (this.worklogService.counter) {
-      this.logs[language][this.worklogService.counter].item.map(e => {
+      this.logs[this.worklogService.counter].item.map(e => {
         if (e.completed) {
           acc += +e.points.slice(0, -3);
         }
