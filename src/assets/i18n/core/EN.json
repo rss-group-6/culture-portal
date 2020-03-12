@@ -9,5 +9,48 @@
   "descrPortal": {
     "name": "Theater directors of Belarus",
     "description": "A theatre director or stage director is an instructor in the theatre fiel who oversees and orchestrates the mounting of a theatre production (a play, opera, musical, or devised piece of work) by unifying various endeavours and aspects of production. The director's function is to ensure the quality and completeness of theatre production and to lead the members of the creative team into realizing their artistic vision for it. The director thereby collaborates with a team of creative individuals and other staff, coordinating research, stagecraft, costume design, props, lighting design, acting, set design, stage combat, and sound design for the production. If the production is a new piece of writing or a (new) translation of a play, the director may also work with the playwright or a translator."
+  },
+  "authorOfDay": {
+    "name": {
+      "Евстигней": "Evstigney",
+      "Лариса": "Larisa",
+      "Борис": "Boris",
+      "Игнат": "Ignat",
+      "Леон": "Leon",
+      "Владимир": "Vladimir"
+    },
+    "surname": {
+      "Евстигней": "Mirovich",
+      "Лариса": "Aleksandouskaya",
+      "Борис": "Lutsenko",
+      "Игнат": "Buinitsky",
+      "Леон": "Rahlenko",
+      "Владимир": "Tezaurousky"
+    },
+    "id": {
+      "Евстигней": "1",
+      "Лариса": "2",
+      "Борис": "3",
+      "Игнат": "4",
+      "Леон": "5",
+      "Владимир": "6"
+    },
+    "yearsOfLife": {
+      "Евстигней": "29 July [10 August], 1878 - 25 February, 1952",
+      "Лариса": "2 February [15 February], 1902 - 23 May, 1980",
+      "Борис": "16 September, 1937 - 5 February, 2020",
+      "Игнат": "10 [22] August, 1861 - 9 [22] September, 1917",
+      "Леон": "6 [19] September, 1907 - 9 March, 1986",
+      "Владимир": "1880 - 1955"
+    },
+    "generalInfo": {
+      "Евстигней": "Russian and Belarusian Soviet actor, director, playwright, teacher, professor (1945). People's Artist of the Byelorussian SSR (1940).",
+      "Лариса": "Belarusian, Soviet opera singer (soprano), director, publicist, public figure. People's Artist of the USSR (1940).",
+      "Борис": "Soviet and Belarusian film and theater director. People's Artist of the Republic of Belarus (1995). Honored Art Worker of the Byelorussian SSR (1975).",
+      "Игнат": "Belarusian actor, director, theater figure, founder of the first professional national Belarusian theater.",
+      "Леон": "Soviet actor, director, teacher. People's Artist of the USSR (1966).",
+      "Владимир": "Soviet actor and director, Honored Artist of the RSFSR (1945)."
+    },
+    "button": "More"
   }
 }
