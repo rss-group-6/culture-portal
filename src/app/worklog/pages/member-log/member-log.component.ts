@@ -3,6 +3,7 @@ import { GeneralLog } from '../../models/worklog.models';
 import { WorklogService } from '../../services/worklog.service';
 import { LanguageService } from '@core/services/language.service';
 import { TranslateService } from '@ngx-translate/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-member-log',
@@ -17,6 +18,7 @@ export class MemberLogComponent implements OnInit {
     public worklogService: WorklogService,
     private languageService: LanguageService,
     public translate: TranslateService,
+    private spinnerService: NgxSpinnerService,
   ) {
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
@@ -25,6 +27,7 @@ export class MemberLogComponent implements OnInit {
 
   public ngOnInit(): void {
     this.translate.setDefaultLang('EN');
+    this.spinner();
   }
 
   public findItem(id: number): void {
@@ -65,5 +68,12 @@ export class MemberLogComponent implements OnInit {
     }
 
     return total;
+  }
+
+  private spinner(): void {
+    this.spinnerService.show();
+    setTimeout(() => {
+      this.spinnerService.hide();
+    }, 0);
   }
 }

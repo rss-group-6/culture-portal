@@ -10,6 +10,7 @@ import { CarouselNavigationComponent } from './components/carousel-navigation/ca
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SharedModule } from '@shared/shared.module';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -22,7 +23,7 @@ const ModuleTranslate = TranslateModule.forChild({
 
 @NgModule({
   declarations: [WorklogComponent, MemberLogComponent, CarouselNavigationComponent],
-  imports: [CommonModule, WorkLogRoutingModule, ModuleTranslate, NgbModule],
+  imports: [CommonModule, WorkLogRoutingModule, ModuleTranslate, NgbModule, SharedModule],
 })
 export class WorkLogModule {}
 
