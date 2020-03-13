@@ -1,15 +1,10 @@
-<h2 class="text-center mb-5">Работы</h2>
-<ul class="d-flex flex-column align-items-center justify-content-center mb-5">
-  <li *ngFor="let work of listOfWorks">
-    <p>{{ work.date }} - {{ work.work }}</p>
-  </li>
-</ul>
+<h2 class="text-center mb-5">{{ 'listOfWorks.title' | translate }}</h2>
 
 <table class="table container-fluid text-center pl-5">
   <thead>
     <tr>
-      <th scope="col">Даты</th>
-      <th scope="col w-75">Работа</th>
+      <th scope="col">{{ 'listOfWorks.date' | translate }}</th>
+      <th scope="col w-75">{{ 'listOfWorks.work' | translate }}</th>
     </tr>
   </thead>
   <tbody>

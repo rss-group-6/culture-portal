@@ -50,5 +50,5 @@ const ModuleTranslate = TranslateModule.forChild({
 export class DetailedInformationModule {}
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/directors/', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/detailed-information/', '.json');
 }
