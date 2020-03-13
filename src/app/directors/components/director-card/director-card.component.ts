@@ -19,7 +19,7 @@ export class DirectorCardComponent implements OnInit {
   }
 
   public handleClick() {
-    this.router.navigate[ /* '', */ this.director.id];
+    this.router.navigate(['director', this.director.id]);
 
   }
 
