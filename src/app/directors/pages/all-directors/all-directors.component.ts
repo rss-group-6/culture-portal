@@ -4,9 +4,9 @@ import { Director } from '@shared/models/director';
 import { Observable, fromEvent } from 'rxjs';
 import { map, filter, debounceTime } from 'rxjs/operators';
 import { SearchService } from '../../services/search.service';
-
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '@core/services/language.service';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-all-directors',
@@ -23,7 +23,8 @@ export class AllDirectorsComponent implements OnInit, AfterViewInit {
   constructor(
     private searchService: SearchService,
     private translate: TranslateService,
-    private languageService: LanguageService) {
+    private languageService: LanguageService,
+    private spinnerService: NgxSpinnerService) {
 
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
@@ -34,9 +35,8 @@ export class AllDirectorsComponent implements OnInit, AfterViewInit {
     this.searchService.observeSearch.subscribe(
       arrOfDirectors => this.allDirectors = arrOfDirectors
     );
-
     this.translate.setDefaultLang('EN');
-
+    this.spinner();
   }
 
   public ngAfterViewInit(): void {
@@ -57,6 +57,13 @@ export class AllDirectorsComponent implements OnInit, AfterViewInit {
         this.searchService.getSearchResult(str);
       }
     );
+  }
+
+  private spinner(): void {
+    this.spinnerService.show();
+    setTimeout(() => {
+      this.spinnerService.hide();
+    }, 0);
   }
 
 }
