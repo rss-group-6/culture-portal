@@ -127,9 +127,7 @@ export const Directors: Director[] = [
       '../assets/images/aleksandrovskaya5.jpg',
     ],
     videos: [
-      'https://www.youtube.com/watch?v=v3LC9JtorMM',
-      'https://www.youtube.com/watch?v=nHR-jd2IKCE',
-      'https://www.youtube.com/watch?v=6Ls4HgTsC9o&feature=emb_logo',
+      'https://www.youtube.com/watch?v=v3LC9JtorMM'
     ],
     placesOfActivity: [
       {
@@ -200,7 +198,7 @@ export const Directors: Director[] = [
       '../assets/images/lucenko4.jpg',
       '../assets/images/lucenko5.jpg',
     ],
-    videos: ['https://www.youtube.com/watch?v=wM-HkQ59usY', 'https://www.youtube.com/watch?v=WNog9EWuJ7Q'],
+    videos: ['https://www.youtube.com/watch?v=wM-HkQ59usY'],
     placesOfActivity: [
       {
         activity: 'Национальный академический драматический театр имени М. Горького',
@@ -248,15 +246,19 @@ export const Directors: Director[] = [
     ],
     listOfWorks: [
       {
+        date: '1913',
         work: '«Лявониха»',
       },
       {
+        date: '1914',
         work: '«Дуда-веселуха»',
       },
       {
+        date: '1914',
         work: '«По ревизии» М. Крапивницкого',
       },
       {
+        date: '1916',
         work: '«Модный шляхтич» К. Каганца',
       },
     ],
@@ -267,6 +269,12 @@ export const Directors: Director[] = [
       '../assets/images/bujnicki4.jpg',
     ],
     videos: ['https://www.youtube.com/watch?v=ACDGr4TUkvs'],
+    placesOfActivity: [
+      {
+        activity: 'усадьба Поливачи Прозорокской волости (Глубокский район Витебской области)',
+        center: [55.18449707014662,27.862847499999972]
+      },
+    ],
   },
   {
     name: 'Леон',
@@ -322,6 +330,16 @@ export const Directors: Director[] = [
       '../assets/images/rahlenko2.jpg',
       '../assets/images/rahlenko3.jpg',
     ],
+    videos: [
+      'https://www.youtube.com/watch?v=kimvRGqEe-U'
+    ],
+    placesOfActivity: [
+      {
+        activity:
+          '1-ый Белорусский государственный драматический театр в Минске (ныне — Национальный академический театр имени Янки Купалы)',
+          center: [53.90088357066573,27.562774500000007]
+      },
+    ],
   },
   {
     name: 'Владимир',
@@ -360,15 +378,19 @@ export const Directors: Director[] = [
     ],
     listOfWorks: [
       {
+        date: '1925',
         work: '«Золотой петушок» (Н.Римский-Корсаков)',
       },
       {
+        date: '1926',
         work: '«Евгений Онегин» (П.Чайковский)',
       },
       {
+        date: '1917',
         work: '«Женщина без головы»',
       },
       {
+        date: '1930',
         work: '«Бедность не порок» (А.Островский)',
       },
     ],
@@ -379,6 +401,7 @@ export const Directors: Director[] = [
       '../assets/images/tezavrovski4.jpg',
       '../assets/images/tezavrovski5.jpg',
     ],
+    videos: ['https://www.youtube.com/watch?v=nK_FVB1d_RM'],
     placesOfActivity: [
       {
         activity:
