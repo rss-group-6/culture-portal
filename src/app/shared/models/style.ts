@@ -1,4 +1,4 @@
 export interface StyleItem {
   name: string;
-  content: string;
+  content: object | string;
 }
