@@ -27,8 +27,8 @@ a {
 
 img {
   margin: 25px 0;
-  -webkit-filter: grayscale(70%);
-  filter: grayscale(70%);
+  -webkit-filter: grayscale(40%);
+  filter: grayscale(40%);
   -webkit-animation: pulsing 2s infinite;
   animation: pulsing 3s 1;
 }
@@ -44,8 +44,8 @@ img:hover {
   margin: 20px 0 0 10px;
 }
 
-button { 
-  margin: 5px 5px 5px 5px 
+button {
+  margin: 5px 5px 5px 5px
 }
 
 .centered {
