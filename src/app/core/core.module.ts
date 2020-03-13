@@ -32,7 +32,7 @@ const ModuleTranslate = TranslateModule.forRoot({
     DirectorOfDayComponent,
     DirectorOfDayPageComponent,
     Error404Component,
-    Error404pageComponent
+    Error404pageComponent,
   ],
   imports: [CommonModule, SharedModule, NgbModule, HttpClientModule, ModuleTranslate],
   exports: [SharedModule, HomePageComponent, HeaderComponent, TranslateModule],

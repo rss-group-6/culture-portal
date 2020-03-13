@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, ParamMap } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { DirectorService } from '../../services/director.service';
-import { Observable } from 'rxjs';
 import { Director } from '@shared/models/director';
-import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-detailes',
@@ -12,14 +10,11 @@ import { switchMap } from 'rxjs/operators';
 })
 export class DetailesComponent implements OnInit {
   public director: Director;
+  public currentVideo: string;
 
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    private directorService: DirectorService,
-  ) {}
+  constructor(private route: ActivatedRoute, private directorService: DirectorService) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.director = this.directorService.getDirectorById(params.id);
       console.log(this.director);

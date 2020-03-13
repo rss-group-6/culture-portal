@@ -1,9 +1,13 @@
-<h1>{{ director.name }}</h1>
-<p>{{ director.yearsOfLife }}</p>
-<img [src]="director.photos[0]" alt="" />
-<ul>
-  <li *ngFor="let work of director.listOfWorks">
-    <span>{{ work.date }}</span
-    ><span>{{ work.work }}</span>
-  </li>
-</ul>
+<h1 class="text-center mb-3">{{ director.name }} {{ director.surname }}</h1>
+<p class="text-center mb-5">{{ director.yearsOfLife }}</p>
+<img class="img-fluid rounded mx-auto w-50 h-50 d-block mb-5" [src]="director.photos[0]" alt="" />
+
+<app-timeline [biography]="director.biography"></app-timeline>
+
+<app-list-of-works [listOfWorks]="director.listOfWorks"></app-list-of-works>
+
+<app-gallery [photos]="director.photos"></app-gallery>
+
+<app-videos [videos]="director.videos"></app-videos>
+
+<app-map [placesOfActivity]="director.placesOfActivity"></app-map>
