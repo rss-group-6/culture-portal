@@ -1,4 +1,4 @@
-{   "descrPortal": 
+{   "descrPortal":
       { "name": "Наша каманда"},
     "developer": {
         "name" : {
@@ -13,8 +13,8 @@
             "Kravchenko": "Краўчанка",
             "Lysiuk": "Лысюк",
             "Sidarkevich": "Сiдаркевiч",
-            "Shcheglakov": "Шчаглякоў",
-            "Golomb": "Голамб",
+            "Shcheglakov": "Шчаглакоў",
+            "Golomb": "Гaлoмб",
             "Popova": "Папова"
         },
         "worklog": {
