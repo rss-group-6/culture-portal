@@ -6,6 +6,7 @@ import { DevelopersListComponent } from './pages/developers-list/developers-list
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SharedModule } from '@shared/shared.module';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -18,7 +19,7 @@ const ModuleTranslate = TranslateModule.forChild({
 
 @NgModule({
   declarations: [DevelopersListComponent, DeveloperItemComponent],
-  imports: [CommonModule, TeamMembersRoutingModule, ModuleTranslate],
+  imports: [CommonModule, TeamMembersRoutingModule, ModuleTranslate, SharedModule],
   exports: [DevelopersListComponent],
 })
 export class TeamMembersModule {}
@@ -26,4 +27,3 @@ export class TeamMembersModule {}
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/team-members/', '.json');
 }
-

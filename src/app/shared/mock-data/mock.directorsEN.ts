@@ -1,7 +1,7 @@
 import { Director } from "@shared/models/director";
 
-const Directors: Director[] = [
-    {
+export const Directors: Director[] = [
+  {
     "name": "Evstigney",
     "surname": "Mirovich",
     "id": "1",
@@ -65,8 +65,7 @@ const Directors: Director[] = [
       {
         "activity":
           "1st Belarusian State Drama Theater in Minsk (now - Yanka Kupala National Academic Theater)",
-        "mapLink":
-          "https://www.google.com/maps/place/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D1%82%D0%B5%D0%B0%D1%82%D1%80+%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8+%D0%AF%D0%BD%D0%BA%D0%B8+%D0%9A%D1%83%D0%BF%D0%B0%D0%BB%D1%8B/@53.9008774,27.5604835,17z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfa19e6b0a93:0xbadbbeae414b10b5!8m2!3d53.9008774!4d27.5626722"
+        "center": [53.90088357066573, 27.562774500000007]
       }
     ]
   },
@@ -128,15 +127,12 @@ const Directors: Director[] = [
       "../assets/images/aleksandrovskaya5.jpg"
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=v3LC9JtorMM",
-      "https://www.youtube.com/watch?v=nHR-jd2IKCE",
-      "https://www.youtube.com/watch?v=6Ls4HgTsC9o&feature=emb_logo"
+      "https://www.youtube.com/watch?v=v3LC9JtorMM"
     ],
     "placesOfActivity": [
       {
         "activity": "Belarusian Opera and Ballet Theater",
-        "mapLink":
-          "https://www.google.com/maps?q=%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9+%D1%82%D0%B5%D0%B0%D1%82%D1%80+%D0%BE%D0%BF%D0%B5%D1%80%D1%8B+%D0%B8+%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjR_uiP5YXoAhVGR5oKHUV6DCAQ_AUoAnoECBYQBA"
+        "center": [53.91074407066195, 27.561848999999974]
       }
     ]
   },
@@ -202,12 +198,11 @@ const Directors: Director[] = [
       "../assets/images/lucenko4.jpg",
       "../assets/images/lucenko5.jpg"
     ],
-    "videos": ["https://www.youtube.com/watch?v=wM-HkQ59usY", "https://www.youtube.com/watch?v=WNog9EWuJ7Q"],
+    "videos": ["https://www.youtube.com/watch?v=wM-HkQ59usY"],
     "placesOfActivity": [
       {
         "activity": "National Academic Drama Theater named after M. Gorky",
-        "mapLink":
-          "https://www.google.com/maps/place/Maksim+Gorky+Theather/@53.898314,27.5486068,17z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfe849ff45d7:0xd352a9a2081042d8!8m2!3d53.898314!4d27.5507955"
+        "center": [53.89840557065936, 27.551131999999964]
       }
     ]
   },
@@ -251,15 +246,19 @@ const Directors: Director[] = [
     ],
     "listOfWorks": [
       {
+        "date": '1913',
         "work": "«Lyavonikha»"
       },
       {
+        "date": '1914',
         "work": "«Duda-vesyalukha»"
       },
       {
+        "date": '1914',
         "work": "«According to revision» M. Krapivnitsky"
       },
       {
+        "date": '1916',
         "work": "«Modny shlyzchtich» K. Kaganets"
       }
     ],
@@ -269,7 +268,13 @@ const Directors: Director[] = [
       "../assets/images/bujnicki3.jpg",
       "../assets/images/bujnicki4.jpg"
     ],
-    "videos": ["https://www.youtube.com/watch?v=ACDGr4TUkvs"]
+    "videos": ["https://www.youtube.com/watch?v=ACDGr4TUkvs"],
+    "placesOfActivity": [
+      {
+        "activity": 'Glubokoe district of Vitebsk region',
+        "center": [55.18449707014662, 27.862847499999972]
+      },
+    ],
   },
   {
     "name": "Leoon",
@@ -324,7 +329,17 @@ const Directors: Director[] = [
       "../assets/images/rahlenko1.jpg",
       "../assets/images/rahlenko2.jpg",
       "../assets/images/rahlenko3.jpg"
-    ]
+    ],
+    "videos": [
+      'https://www.youtube.com/watch?v=kimvRGqEe-U'
+    ],
+    "placesOfActivity": [
+      {
+        "activity":
+          "1st Belarusian State Drama Theater in Minsk (now - Yanka Kupala National Academic Theater)",
+        "center": [53.90088357066573, 27.562774500000007]
+      },
+    ],
   },
   {
     "name": "Vladimit",
@@ -363,15 +378,19 @@ const Directors: Director[] = [
     ],
     "listOfWorks": [
       {
+        "date": "1925",
         "work": "«The Golden Cockerel» (N.Rimsky-Korsakov)"
       },
       {
+        "date": "1926",
         "work": "«Eugene Onegin» (P. Tchaikovsky)"
       },
       {
+        "date": "1917",
         "work": "«Headless woman»"
       },
       {
+        "date": "1930",
         "work": "«Poverty is No Vice» (A.Ostrovsky)"
       }
     ],
@@ -382,12 +401,12 @@ const Directors: Director[] = [
       "../assets/images/tezavrovski4.jpg",
       "../assets/images/tezavrovski5.jpg"
     ],
+    "videos": ['https://www.youtube.com/watch?v=nK_FVB1d_RM'],
     "placesOfActivity": [
       {
         "activity":
           "Moscow Academic Musical Theater of K. S. Stanislavsky and V. I. Nemirovich-Danchenko",
-        "mapLink":
-          "https://www.google.com/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%9C%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%82%D0%B5%D0%B0%D1%82%D1%80+%D0%9A.+%D0%A1.+%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+%D0%B8+%D0%92.+%D0%98.+%D0%9D%D0%B5%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87%D0%B0-%D0%94%D0%B0%D0%BD%D1%87%D0%B5%D0%BD%D0%BA%D0%BE/@55.7648271,37.6087153,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a414f69e727:0x72dbf354113bc13c!8m2!3d55.7648271!4d37.610904"
+        "center": [55.764520568969374, 37.61039499999998]
       }
     ]
   }]
