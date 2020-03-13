@@ -1,21 +1,29 @@
 <div class="container p-0">
   <span class="d-flex flex-column align-items-center mt-5 p-0" *ngIf="!this.worklogService.counter">
-    <p>{{'difficultiesTitle' | translate | uppercase}}</p>
+    <p>{{ 'difficultiesTitle' | translate | uppercase }}</p>
     <ol class="">
-      <li class="m-3" *ngFor="let difficulty of ('difficulties' | translate)">
-        <p>{{difficulty | translate | uppercase}}</p>
+      <li class="m-3" *ngFor="let difficulty of 'difficulties' | translate">
+        <p>{{ difficulty | translate | uppercase }}</p>
       </li>
     </ol>
   </span>
   <ul class="mt-5 p-0">
-    <span class="d-flex justify-content-center total m-2"
-      [innerHtml]="calculateTotal(this.translate.currentLang)"></span>
+    <span
+      class="d-flex justify-content-center total m-2"
+      [innerHtml]="calculateTotal(this.translate.currentLang)"
+    ></span>
     <li class="m-3" *ngFor="let log of logs[this.worklogService.counter].item" (click)="findItem(log.id)">
       <span class="d-flex align-items-center p-2">
-        <input class="ml-3" id="{{log.id}}" type="checkbox" [checked]="log.completed" (change)="findItem(log.id)">
-        <label class="checkmark ml-3" for="{{log.id}}"></label>
-        <strong class="pl-4 mr-3 text-nowrap">{{log.points}}</strong>
-        {{log.title | translate | uppercase}}
+        <input
+          class="ml-3"
+          id="{{ log.id }}"
+          type="checkbox"
+          [checked]="log.completed"
+          (change)="findItem(log.id)"
+        />
+        <label class="checkmark ml-3" for="{{ log.id }}"></label>
+        <strong class="pl-4 mr-3 text-nowrap">{{ log.points }}</strong>
+        {{ log.title | translate | uppercase }}
       </span>
     </li>
   </ul>
@@ -25,6 +33,7 @@
   size="medium"
   color="#fff"
   type="ball-scale-multiple"
+  class="preloader"
 >
   <p>Loading...</p>
 </ngx-spinner>
