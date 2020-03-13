@@ -1,6 +1,11 @@
 <h2 class="text-center mb-5">Видео</h2>
 <div class="d-flex flex-column align-items-center flex-wrap justify-content-center mb-5">
-  <a *ngFor="let video of videos" (click)="openVerticallyCentered(content, video)">{{ video }}</a>
+  <a
+    class="btn btn-outline-primary video mb-3"
+    *ngFor="let video of videos"
+    (click)="openVerticallyCentered(content, video)"
+    >Видео</a
+  >
 </div>
 <ng-template #content let-modal class="container-fluid">
   <div class="modal-header">

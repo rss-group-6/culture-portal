@@ -4,3 +4,18 @@
     <p>{{ work.date }} - {{ work.work }}</p>
   </li>
 </ul>
+
+<table class="table container-fluid text-center pl-5">
+  <thead>
+    <tr>
+      <th scope="col">Даты</th>
+      <th scope="col w-75">Работа</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr scope="row" *ngFor="let work of listOfWorks">
+      <td>{{ work.date }}</td>
+      <td>{{ work.work }}</td>
+    </tr>
+  </tbody>
+</table>
