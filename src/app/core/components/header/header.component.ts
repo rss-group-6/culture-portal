@@ -30,6 +30,7 @@ export class HeaderComponent implements OnInit {
       ourTeam: false,
     };
     this.translate.setDefaultLang('EN');
+    this.language = 'EN';
   }
 
   public goTo(url): void {
