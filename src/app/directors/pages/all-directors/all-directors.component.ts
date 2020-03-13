@@ -16,9 +16,6 @@ import { LanguageService } from '@core/services/language.service';
 
 export class AllDirectorsComponent implements OnInit, AfterViewInit {
 
-
-
-
   public allDirectors: Director[];
   public input: Observable<Event>;
   @ViewChild('searchQuery') public searchQuery: ElementRef;
@@ -30,9 +27,7 @@ export class AllDirectorsComponent implements OnInit, AfterViewInit {
 
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
-    })
-
-
+    });
   }
 
   ngOnInit(): void {

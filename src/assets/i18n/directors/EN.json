@@ -1,5 +1,31 @@
 {
-  "directors": {
+  "input": {
     "search": "Search"
+  },
+  "directors": {
+    "name": {
+      "1": "Evstigney",
+      "2": "Larisa",
+      "3": "Boris",
+      "4": "Ignat",
+      "5": "Leon",
+      "6": "Vladimir"
+    },
+    "surname": {
+      "1": "Mirovich",
+      "2": "Aleksandouskaya",
+      "3": "Lutsenko",
+      "4": "Buinitsky",
+      "5": "Rahlenko",
+      "6": "Tezaurousky"
+    },
+    "yearsOfLife": {
+      "1": "29 July [10 August], 1878 - 25 February, 1952",
+      "2": "2 February [15 February], 1902 - 23 May, 1980",
+      "3": "16 September, 1937 - 5 February, 2020",
+      "4": "10 [22] August, 1861 - 9 [22] September, 1917",
+      "5": "6 [19] September, 1907 - 9 March, 1986",
+      "6": "1880 - 1955"
+    }
   }
 }

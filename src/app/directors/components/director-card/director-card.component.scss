@@ -1,7 +1,17 @@
 $green: #a2c872;
 
+
 :host{
   margin-bottom: 10px;
+}
+
+$card-height: 100%;
+$card-width: 100%;
+
+@media screen and (max-width: 575px) {
+  .card-size{
+    width: 300px;
+  }
 }
 
 .shading {
@@ -17,7 +27,3 @@ $green: #a2c872;
   }
 }
 
-.test{
-  max-width: 302px;
-  max-height: 477px;
-}

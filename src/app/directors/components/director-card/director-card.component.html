@@ -1,8 +1,10 @@
-<div class="card text-center test" (click)="handleClick()">
-  <img src="{{director.photos[0]}}" width="300" height="400" alt="{{director.surname +' '+ director.name}}">
+<div class="card text-center card-size" (click)="handleClick()">
+  <img src="{{director.photos[0]}}" width="300" height="400" alt="{{director.surname +' '+ director.name}}"
+    class="img-size">
   <div class="card-body">
-    <h3 class="card-title">{{director.surname +' '+ director.name}}</h3>
-    <h5 class="card-title">{{director.yearsOfLife}}</h5>
+    <h3 class="card-title">
+      {{(("directors.surname." + director.id) | translate) +' '+ (("directors.name." + director.id)| translate)}}</h3>
+    <h5 class="card-title">{{("directors.yearsOfLife."+ director.id) | translate}}</h5>
   </div>
   <div class="shading"></div>
 </div>

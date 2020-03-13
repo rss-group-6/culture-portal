@@ -11,7 +11,9 @@ export class DirectorCardComponent implements OnInit {
 
   @Input() public director: Director;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
