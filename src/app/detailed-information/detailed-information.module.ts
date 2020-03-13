@@ -16,6 +16,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { MglTimelineModule } from 'angular-mgl-timeline.9';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { environment } from '../../environments/environment';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -40,7 +41,7 @@ const ModuleTranslate = TranslateModule.forChild({
     SharedModule,
     DetailedInformationRoutingModule,
     ModuleTranslate,
-    AngularYandexMapsModule.forRoot('cd6bd965-79c3-43d5-8d3c-e729092ed0d3'),
+    AngularYandexMapsModule.forRoot(environment.MAP_API_KEY),
     YouTubePlayerModule,
     MglTimelineModule,
   ],
