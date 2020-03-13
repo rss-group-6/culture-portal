@@ -17,6 +17,6 @@ export interface Director {
     videos?: string[];
     placesOfActivity?: {
         activity: string;
-        center: number[]
+        center: number[] | string
     }[];
 }
