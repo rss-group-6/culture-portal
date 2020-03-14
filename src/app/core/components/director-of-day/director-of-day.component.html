@@ -8,7 +8,7 @@
         <h1>{{ ("authorOfDay.name." + director.name) | translate }} {{ ("authorOfDay.surname." + director.name) | translate }}</h1>
         <h3>{{ ("authorOfDay.yearsOfLife." + director.name ) | translate }}</h3>
         <p class="generalInfo">{{ ("authorOfDay.generalInfo." + director.name) | translate}}</p>
-        <button type="button" class="btn btn-outline-primary more">{{ "authorOfDay.button" | translate }}</button>
+        <button (click)="goToDetails()" type="button" class="btn btn-outline-primary more">{{ "authorOfDay.button" | translate }}</button>
       </div>
   </div>
 </div>
