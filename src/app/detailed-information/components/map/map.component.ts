@@ -10,9 +10,7 @@ export class MapComponent implements OnInit {
 
   constructor() {}
 
-  public ngOnInit(): void {
-    console.log(this.placesOfActivity);
-  }
+  public ngOnInit(): void {}
 
   public setMarkerText(text: string): { hintContent: string; balloonContent: string } {
     return {

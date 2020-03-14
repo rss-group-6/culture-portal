@@ -1,7 +1,7 @@
 <h2 class="text-center mb-5">{{ 'gallery.title' | translate }}</h2>
-<div class="justify-content-center d-flex flex-wrap mb-5">
+<div class="gallery justify-content-center d-flex flex-wrap mb-5">
   <div
-    class="card rounded m-2 d-flex justify-content-center align-items-center"
+    class="img-holder m-2 d-flex justify-content-center align-items-center"
     *ngFor="let photo of photos"
     (click)="openVerticallyCentered(content, photo)"
   >
