@@ -2,14 +2,14 @@
   { "name": "Style Guide"},
 "item": {
     "name" : {
-      "Colors": "Colors",
+      "Visualization": "Visualization",
       "Typography": "Typography",
-      "Inputs": "Visualization"
+      "Colors": "Colors"
     },
     "content": {
-      "Colors": "Main colors: #a1c872be, #6c757d",
+      "Visualization": "Library of visual components - Bootstrap",
       "Typography": "Font-family: Raleway, sans-serif",
-      "Inputs": "Library of visual components - Bootstrap"
+      "Colors": "Main colors: #a1c872be, #6c757d"
     }
 }
 }

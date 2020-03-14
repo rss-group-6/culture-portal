@@ -2,14 +2,14 @@
   { "name": "Стайл Гайд"},
 "item": {
     "name" : {
-      "Colors": "Каляры",
+      "Visualization": "Вiзуалiзацыя",
       "Typography": "Шрыфты",
-      "Inputs": "Вiзуалiзацыя"
+      "Colors": "Каляры"
     },
     "content": {
-      "Colors": "Асноўныя каляры: #a1c872be, #6c757d",
+      "Visualization": "Библiятэка для вiзуалiзацыi кампанентаў - Bootstrap",
       "Typography": "Асноўны шрыфт: Raleway, sans-serif",
-      "Inputs": "Библiятэка для вiзуалiзацыi кампанентаў - Bootstrap"
+      "Colors": "Асноўныя каляры: #a1c872be, #6c757d"
     }
 }
 }

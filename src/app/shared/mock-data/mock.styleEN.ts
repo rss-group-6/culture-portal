@@ -2,7 +2,7 @@ import { StyleItem } from '@shared/models/style'
 
 export const StyleItems: StyleItem[] = [
   {
-    "name": "Colors",
+    "name": "Visualization",
     "content": "content"
   },
   {
@@ -10,7 +10,7 @@ export const StyleItems: StyleItem[] = [
     "content": "content"
   },
   {
-    "name": "Inputs",
+    "name": "Colors",
     "content": "content"
   },
 ]
