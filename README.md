@@ -79,7 +79,7 @@ _______
 
 ### Total
 
-### Maximum points - **280**/**50 + 140 + 50 = 240**
+### Maximum points - **280**/ **50 + 140 + 50 = 240**
 
 ### Min scope (4/4) - **50**/**50**
 - [x] **10** Main page + page with a list of authors + author's page (only pages with content without widgets);
