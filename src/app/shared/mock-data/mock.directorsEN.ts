@@ -9,7 +9,7 @@ export const Directors: Director[] = [
     yearsOfLife: '29 July [10 August], 1878 - 25 February, 1952',
     birthPlace: 'St. Petersburg, the Russian Empire',
     generalInfo:
-      'Russian and Belarusian Soviet actor, director, playwright, teacher, professor (1945). People\'s Artist of the Byelorussian SSR (1940).',
+      "Russian and Belarusian Soviet actor, director, playwright, teacher, professor (1945). People's Artist of the Byelorussian SSR (1940).",
     biography: [
       {
         date: '1900',
@@ -73,7 +73,7 @@ export const Directors: Director[] = [
     surname: 'Aleksandrovskaya',
     id: '2',
     generalInfo:
-      'Belarusian, Soviet opera singer (soprano), director, publicist, public figure. People\'s Artist of the USSR (1940).',
+      "Belarusian, Soviet opera singer (soprano), director, publicist, public figure. People's Artist of the USSR (1940).",
     yearsOfLife: '2 February [15 February], 1902 - 23 May, 1980',
     birthPlace: 'Minsk, the Russin Empire',
     biography: [
@@ -139,7 +139,7 @@ export const Directors: Director[] = [
     surname: 'Lutsenko',
     id: '3',
     generalInfo:
-      'Soviet and Belarusian film and theater director. People\'s Artist of the Republic of Belarus (1995). Honored Art Worker of the Byelorussian SSR (1975).',
+      "Soviet and Belarusian film and theater director. People's Artist of the Republic of Belarus (1995). Honored Art Worker of the Byelorussian SSR (1975).",
     yearsOfLife: '16 September, 1937 - 5 February, 2020',
     birthPlace: 'Maykop, Krasnodar Territory, RSFSR, USSR',
     biography: [
@@ -270,7 +270,7 @@ export const Directors: Director[] = [
     id: '5',
     yearsOfLife: '6 [19] September, 1907 - 9 March, 1986',
     birthPlace: 'Terechovka, Gomel County, Mogilev Province, Russian Empire',
-    generalInfo: 'Soviet actor, director, teacher. People\'s Artist of the USSR (1966).',
+    generalInfo: "Soviet actor, director, teacher. People's Artist of the USSR (1966).",
     biography: [
       {
         date: '1924—1927',
@@ -379,7 +379,6 @@ export const Directors: Director[] = [
     ],
     photos: [
       '../assets/images/tezavrovski1.jpg',
-      '../assets/images/tezavrovski2.jpg',
       '../assets/images/tezavrovski3.jpg',
       '../assets/images/tezavrovski4.jpg',
       '../assets/images/tezavrovski5.jpg',

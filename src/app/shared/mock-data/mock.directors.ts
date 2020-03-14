@@ -379,7 +379,6 @@ export const Directors: Director[] = [
     ],
     photos: [
       '../assets/images/tezavrovski1.jpg',
-      '../assets/images/tezavrovski2.jpg',
       '../assets/images/tezavrovski3.jpg',
       '../assets/images/tezavrovski4.jpg',
       '../assets/images/tezavrovski5.jpg',
