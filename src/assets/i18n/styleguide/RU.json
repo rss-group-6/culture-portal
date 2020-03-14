@@ -4,20 +4,12 @@
     "name" : {
       "Colors": "Цвета",
       "Typography": "Шрифты",
-      "Inputs": "Инпуты",
-      "Buttons": "Кнопки",
-      "CheckBox": "Чекбоксы",
-      "Table": "Таблицы",
-      "Cards": "Карточки"
+      "Inputs": "Визуализация"
     },
     "content": {
-      "Colors": "Контент",
-      "Typography": "Контент",
-      "Inputs": "Контент",
-      "Buttons": "Контент",
-      "CheckBox": "Контент",
-      "Table": "Контент",
-      "Cards": "Контент"
+      "Colors": "Основнsе цвета: #a1c872be, #6c757d",
+      "Typography": "Основной шрифт: Raleway, sans-serif",
+      "Inputs": "Библиотека для визуализации компонентов - Bootstrap"
     }
 }
 }

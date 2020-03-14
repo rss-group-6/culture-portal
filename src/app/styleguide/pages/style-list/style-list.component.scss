@@ -3,7 +3,7 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1056px;
   text-align: center;
   margin-top: 10px;
 }
@@ -14,4 +14,47 @@
 
 h1 {
   font-size: 5rem;
+}
+
+.input {
+  margin: 0 auto;
+  width: 250px;
+}
+
+.flex {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  min-width: 160px;
+  color: #A2C872;
+  background-color: #fff;
+  border: 1px solid #A2C872;
+  font-size: 1.7rem;
+  &:hover {
+      color: #ffffff;
+      background-color: #A2C872;
+      transition: 1s;
+  }
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #6c757d;
+
+  &:hover {
+    color:#a2c872;
+  }
+}
+
+table {
+  margin: 40px auto;
+  width: 1056px;
+}
+
+td, tr {
+  border: 1px solid #55585b;
 }

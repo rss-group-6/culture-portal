@@ -4,20 +4,12 @@
     "name" : {
       "Colors": "Каляры",
       "Typography": "Шрыфты",
-      "Inputs": "Iнпуты",
-      "Buttons": "Кнопкi",
-      "CheckBox": "Чэкбоксы",
-      "Table": "Таблiцы",
-      "Cards": "Карткi"
+      "Inputs": "Вiзуалiзацыя"
     },
     "content": {
-      "Colors": "Кантэнт",
-      "Typography": "Кантэнт",
-      "Inputs": "Кантэнт",
-      "Buttons": "Кантэнт",
-      "CheckBox": "Кантэнт",
-      "Table": "Кантэнт",
-      "Cards": "Кантэнт"
+      "Colors": "Асноўныя каляры: #a1c872be, #6c757d",
+      "Typography": "Асноўны шрыфт: Raleway, sans-serif",
+      "Inputs": "Библiятэка для вiзуалiзацыi кампанентаў - Bootstrap"
     }
 }
 }

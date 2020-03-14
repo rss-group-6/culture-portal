@@ -4,20 +4,12 @@
     "name" : {
       "Colors": "Colors",
       "Typography": "Typography",
-      "Inputs": "Inputs",
-      "Buttons": "Buttons",
-      "CheckBox": "CheckBox",
-      "Table": "Table",
-      "Cards": "Cards"
+      "Inputs": "Visualization"
     },
     "content": {
-      "Colors": "Content",
-      "Typography": "Content",
-      "Inputs": "Content",
-      "Buttons": "Content",
-      "CheckBox": "Content",
-      "Table": "Content",
-      "Cards": "Content"
+      "Colors": "Main colors: #a1c872be, #6c757d",
+      "Typography": "Font-family: Raleway, sans-serif",
+      "Inputs": "Library of visual components - Bootstrap"
     }
 }
 }
