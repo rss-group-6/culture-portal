@@ -13,7 +13,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class DetailesComponent implements OnInit {
   public director: Director;
   public currentVideo: string;
-  public language: string;
+  public language = 'EN';
+  public id: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,13 +24,20 @@ export class DetailesComponent implements OnInit {
   ) {
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
+      this.language = lang;
+      this.getDirector(this.id);
     });
   }
 
   public ngOnInit(): void {
     this.translate.setDefaultLang('EN');
     this.route.params.subscribe(params => {
-      this.director = this.directorService.getDirectorById(params.id);
+      this.id = params.id;
+      this.getDirector(params.id);
     });
+  }
+
+  public getDirector(id: string): void {
+    this.director = this.directorService.getDirectorById(id, this.language);
   }
 }
