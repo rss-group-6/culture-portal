@@ -1,12 +1,12 @@
 <h2 class="text-center mb-5">{{ 'gallery.title' | translate }}</h2>
 <div class="justify-content-center d-flex flex-wrap mb-5">
-  <img
+  <div
+    class="card rounded m-2 d-flex justify-content-center align-items-center"
     *ngFor="let photo of photos"
-    class="rounded w-25 h-25 m-2"
-    [src]="photo"
-    alt=""
     (click)="openVerticallyCentered(content, photo)"
-  />
+  >
+    <img class="rounded" [src]="photo" alt="" />
+  </div>
 </div>
 <ng-template #content let-modal class="container-fluid">
   <div class="modal-header">

@@ -55,9 +55,7 @@ export const Directors: Director[] = [
     ],
     photos: [
       '../assets/images/mirovich1.jpg',
-      '../assets/images/mirovich2.jpg',
       '../assets/images/mirovich3.jpg',
-      '../assets/images/mirovich4.jpg',
       '../assets/images/mirovich5.jpg',
     ],
     videos: ['https://www.youtube.com/watch?v=Yunms45xnog&feature=emb_logo'],
@@ -65,7 +63,7 @@ export const Directors: Director[] = [
       {
         activity:
           '1-ый Белорусский государственный драматический театр в Минске (ныне — Национальный академический театр имени Янки Купалы)',
-          center: [53.90088357066573,27.562774500000007]
+        center: [53.90088357066573, 27.562774500000007],
       },
     ],
   },
@@ -126,13 +124,11 @@ export const Directors: Director[] = [
       '../assets/images/aleksandrovskaya4.jpg',
       '../assets/images/aleksandrovskaya5.jpg',
     ],
-    videos: [
-      'https://www.youtube.com/watch?v=v3LC9JtorMM'
-    ],
+    videos: ['https://www.youtube.com/watch?v=v3LC9JtorMM'],
     placesOfActivity: [
       {
         activity: 'Белорусский театр оперы и балета',
-        center: [53.91074407066195,27.561848999999974]
+        center: [53.91074407066195, 27.561848999999974],
       },
     ],
   },
@@ -194,15 +190,13 @@ export const Directors: Director[] = [
     photos: [
       '../assets/images/lucenko1.jpg',
       '../assets/images/lucenko2.jpg',
-      '../assets/images/lucenko3.jpg',
       '../assets/images/lucenko4.jpg',
-      '../assets/images/lucenko5.jpg',
     ],
     videos: ['https://www.youtube.com/watch?v=wM-HkQ59usY'],
     placesOfActivity: [
       {
         activity: 'Национальный академический драматический театр имени М. Горького',
-        center: [53.89840557065936,27.551131999999964]
+        center: [53.89840557065936, 27.551131999999964],
       },
     ],
   },
@@ -262,17 +256,12 @@ export const Directors: Director[] = [
         work: '«Модный шляхтич» К. Каганца',
       },
     ],
-    photos: [
-      '../assets/images/bujnicki1.jpg',
-      '../assets/images/bujnicki2.jpg',
-      '../assets/images/bujnicki3.jpg',
-      '../assets/images/bujnicki4.jpg',
-    ],
+    photos: ['../assets/images/bujnicki1.jpg', '../assets/images/bujnicki4.jpg'],
     videos: ['https://www.youtube.com/watch?v=ACDGr4TUkvs'],
     placesOfActivity: [
       {
         activity: 'усадьба Поливачи Прозорокской волости (Глубокский район Витебской области)',
-        center: [55.18449707014662,27.862847499999972]
+        center: [55.18449707014662, 27.862847499999972],
       },
     ],
   },
@@ -325,19 +314,13 @@ export const Directors: Director[] = [
         work: '«Грозовой год» А. Я. Каплера',
       },
     ],
-    photos: [
-      '../assets/images/rahlenko1.jpg',
-      '../assets/images/rahlenko2.jpg',
-      '../assets/images/rahlenko3.jpg',
-    ],
-    videos: [
-      'https://www.youtube.com/watch?v=kimvRGqEe-U'
-    ],
+    photos: ['../assets/images/rahlenko1.jpg', '../assets/images/rahlenko3.jpg'],
+    videos: ['https://www.youtube.com/watch?v=kimvRGqEe-U'],
     placesOfActivity: [
       {
         activity:
           '1-ый Белорусский государственный драматический театр в Минске (ныне — Национальный академический театр имени Янки Купалы)',
-          center: [53.90088357066573,27.562774500000007]
+        center: [53.90088357066573, 27.562774500000007],
       },
     ],
   },
@@ -406,8 +389,8 @@ export const Directors: Director[] = [
       {
         activity:
           'Московский академический Музыкальный театр К. С. Станиславского и В. И. Немировича-Данченко',
-        center: [55.764520568969374,37.61039499999998]
-      }  
+        center: [55.764520568969374, 37.61039499999998],
+      },
     ],
   },
 ];

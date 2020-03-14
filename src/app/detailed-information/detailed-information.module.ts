@@ -17,6 +17,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { MglTimelineModule } from 'angular-mgl-timeline.9';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { environment } from '../../environments/environment';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -44,6 +45,7 @@ const ModuleTranslate = TranslateModule.forChild({
     AngularYandexMapsModule.forRoot(environment.MAP_API_KEY),
     YouTubePlayerModule,
     MglTimelineModule,
+    NgbModule,
   ],
   providers: [DirectorService],
 })

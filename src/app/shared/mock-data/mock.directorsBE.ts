@@ -56,9 +56,7 @@ export const DirectorsBE: Director[] = [
     ],
     photos: [
       '../assets/images/mirovich1.jpg',
-      '../assets/images/mirovich2.jpg',
       '../assets/images/mirovich3.jpg',
-      '../assets/images/mirovich4.jpg',
       '../assets/images/mirovich5.jpg',
     ],
     videos: ['https://www.youtube.com/watch?v=Yunms45xnog&feature=emb_logo'],
@@ -192,9 +190,7 @@ export const DirectorsBE: Director[] = [
     photos: [
       '../assets/images/lucenko1.jpg',
       '../assets/images/lucenko2.jpg',
-      '../assets/images/lucenko3.jpg',
       '../assets/images/lucenko4.jpg',
-      '../assets/images/lucenko5.jpg',
     ],
     videos: ['https://www.youtube.com/watch?v=wM-HkQ59usY'],
     placesOfActivity: [
@@ -259,12 +255,7 @@ export const DirectorsBE: Director[] = [
         work: '«Модны шляхцюк» К. Каганца',
       },
     ],
-    photos: [
-      '../assets/images/bujnicki1.jpg',
-      '../assets/images/bujnicki2.jpg',
-      '../assets/images/bujnicki3.jpg',
-      '../assets/images/bujnicki4.jpg',
-    ],
+    photos: ['../assets/images/bujnicki1.jpg', '../assets/images/bujnicki4.jpg'],
     videos: ['https://www.youtube.com/watch?v=ACDGr4TUkvs'],
     placesOfActivity: [
       {
@@ -322,11 +313,7 @@ export const DirectorsBE: Director[] = [
         work: '«Навальнічны год» А. Я. Каплеры',
       },
     ],
-    photos: [
-      '../assets/images/rahlenko1.jpg',
-      '../assets/images/rahlenko2.jpg',
-      '../assets/images/rahlenko3.jpg',
-    ],
+    photos: ['../assets/images/rahlenko1.jpg', '../assets/images/rahlenko3.jpg'],
     videos: ['https://www.youtube.com/watch?v=kimvRGqEe-U'],
     placesOfActivity: [
       {
