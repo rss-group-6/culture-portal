@@ -18,6 +18,11 @@ const routes: Routes = [
     loadChildren: () => import('./directors/directors.module').then(m => m.DirectorsModule),
   },
   {
+    path: 'director/:id',
+    loadChildren: () =>
+      import('./detailed-information/detailed-information.module').then(m => m.DetailedInformationModule),
+  },
+  {
     path: 'workLog',
     loadChildren: () => import('./worklog/worklog.module').then(m => m.WorkLogModule),
   },
@@ -31,8 +36,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: Error404pageComponent
-  }
+    component: Error404pageComponent,
+  },
 ];
 
 @NgModule({

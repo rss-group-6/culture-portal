@@ -1,0 +1,20 @@
+{
+  "biography": {
+    "title": "Biography"
+  },
+  "listOfWorks": {
+    "title": "List of Works",
+    "date": "Dates",
+    "work": "Work"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "videos": {
+    "title": "Video",
+    "button": "Take a look"
+  },
+  "map": {
+    "title": "Places of activity"
+  }
+}

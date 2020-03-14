@@ -1,4 +1,5 @@
-import { Director } from "@shared/models/director";
+// tslint:disable:max-line-length
+import { Director } from '@shared/models/director';
 
 export const Directors: Director[] = [
   {
@@ -65,7 +66,7 @@ export const Directors: Director[] = [
       {
         activity:
           '1-шы Беларускі дзяржаўны драматычны тэатр у Мінску (цяпер - Нацыянальны акадэмічны тэатр імя Янкі Купалы)',
-        center: [53.90088357066573, 27.562774500000007]
+        center: [53.90088357066573, 27.562774500000007],
       },
     ],
   },
@@ -126,13 +127,11 @@ export const Directors: Director[] = [
       '../assets/images/aleksandrovskaya4.jpg',
       '../assets/images/aleksandrovskaya5.jpg',
     ],
-    videos: [
-      'https://www.youtube.com/watch?v=v3LC9JtorMM'
-    ],
+    videos: ['https://www.youtube.com/watch?v=v3LC9JtorMM'],
     placesOfActivity: [
       {
         activity: 'Беларускі тэатр оперы і балета',
-        center: [53.91074407066195, 27.561848999999974]
+        center: [53.91074407066195, 27.561848999999974],
       },
     ],
   },
@@ -156,8 +155,7 @@ export const Directors: Director[] = [
       },
       {
         date: '1973—1981',
-        content:
-          'Працаваў галоўным рэжысёрам Дзяржаўнага рускага драматычнага тэатра Беларускай ССР.',
+        content: 'Працаваў галоўным рэжысёрам Дзяржаўнага рускага драматычнага тэатра Беларускай ССР.',
       },
       {
         date: '1991-2008, 2008-2020',
@@ -194,15 +192,13 @@ export const Directors: Director[] = [
     photos: [
       '../assets/images/lucenko1.jpg',
       '../assets/images/lucenko2.jpg',
-      '../assets/images/lucenko3.jpg',
       '../assets/images/lucenko4.jpg',
-      '../assets/images/lucenko5.jpg',
     ],
     videos: ['https://www.youtube.com/watch?v=wM-HkQ59usY'],
     placesOfActivity: [
       {
         activity: 'Нацыянальны акадэмічны драматычны тэатр імя М. Горкага',
-        center: [53.89840557065936, 27.551131999999964]
+        center: [53.89840557065936, 27.551131999999964],
       },
     ],
   },
@@ -222,8 +218,7 @@ export const Directors: Director[] = [
       },
       {
         date: '1910',
-        content:
-          'На яе аснове была сфарміравана пастаянная група і пачаты працяглыя гастролі па Беларусі.',
+        content: 'На яе аснове была сфарміравана пастаянная група і пачаты працяглыя гастролі па Беларусі.',
       },
       {
         date: '1913',
@@ -262,17 +257,12 @@ export const Directors: Director[] = [
         work: '«Модны шляхцюк» К. Каганца',
       },
     ],
-    photos: [
-      '../assets/images/bujnicki1.jpg',
-      '../assets/images/bujnicki2.jpg',
-      '../assets/images/bujnicki3.jpg',
-      '../assets/images/bujnicki4.jpg',
-    ],
+    photos: ['../assets/images/bujnicki1.jpg', '../assets/images/bujnicki4.jpg'],
     videos: ['https://www.youtube.com/watch?v=ACDGr4TUkvs'],
     placesOfActivity: [
       {
         activity: 'сядзіба Поливачи Прозорокской воласці (Глыбоцкі раён Віцебскай вобласці)',
-        center: [55.18449707014662, 27.862847499999972]
+        center: [55.18449707014662, 27.862847499999972],
       },
     ],
   },
@@ -325,19 +315,13 @@ export const Directors: Director[] = [
         work: '«Навальнічны год» А. Я. Каплеры',
       },
     ],
-    photos: [
-      '../assets/images/rahlenko1.jpg',
-      '../assets/images/rahlenko2.jpg',
-      '../assets/images/rahlenko3.jpg',
-    ],
-    videos: [
-      'https://www.youtube.com/watch?v=kimvRGqEe-U'
-    ],
+    photos: ['../assets/images/rahlenko1.jpg', '../assets/images/rahlenko3.jpg'],
+    videos: ['https://www.youtube.com/watch?v=kimvRGqEe-U'],
     placesOfActivity: [
       {
         activity:
           '1-шы Беларускі дзяржаўны драматычны тэатр у Мінску (цяпер - Нацыянальны акадэмічны тэатр імя Янкі Купалы)',
-        center: [53.90088357066573, 27.562774500000007]
+        center: [53.90088357066573, 27.562774500000007],
       },
     ],
   },
@@ -404,10 +388,9 @@ export const Directors: Director[] = [
     videos: ['https://www.youtube.com/watch?v=nK_FVB1d_RM'],
     placesOfActivity: [
       {
-        activity:
-          'Маскоўскі акадэмічны Музычны тэатр К. С. Станіслаўскага і У. І. Неміровіча-Данчанкі',
-        center: [55.764520568969374, 37.61039499999998]
-      }
+        activity: 'Маскоўскі акадэмічны Музычны тэатр К. С. Станіслаўскага і У. І. Неміровіча-Данчанкі',
+        center: [55.764520568969374, 37.61039499999998],
+      },
     ],
   },
 ];
