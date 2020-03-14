@@ -79,7 +79,7 @@ _______
 
 ### Total
 
-### Maximum points - **280**/**240**
+### Maximum points - **280**/**50 + 140 + 50 = 240**
 
 ### Min scope (4/4) - **50**/**50**
 - [x] **10** Main page + page with a list of authors + author's page (only pages with content without widgets);
@@ -99,7 +99,7 @@ _______
  - [x] **20** Material-ui / bootstrap is used
  - [x] **10** Portal has third language;
 
-### Extra scope (3/6) - **90**/50**
+### Extra scope (3/6) - **90**/**50**
  - [x] **10** Confidence of the project presentation;
  - [ ] **10** Project is made using scully;
  - [ ] **10** Contentful / netlify cms / other cms is used for content management
