@@ -1,0 +1,15 @@
+{   "descrPortal":
+  { "name": "Style Guide"},
+"item": {
+    "name" : {
+      "Visualization": "Visualization",
+      "Typography": "Typography",
+      "Colors": "Colors"
+    },
+    "content": {
+      "Visualization": "Library of visual components - Bootstrap",
+      "Typography": "Font-family: Raleway, sans-serif",
+      "Colors": "Main colors: #a1c872be, #6c757d"
+    }
+}
+}

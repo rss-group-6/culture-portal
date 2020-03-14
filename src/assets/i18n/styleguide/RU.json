@@ -1,0 +1,15 @@
+{   "descrPortal":
+  { "name": "Стайл Гайд"},
+"item": {
+    "name" : {
+      "Visualization": "Визуализация",
+      "Colors": "Цвета",
+      "Typography": "Шрифты"
+    },
+    "content": {
+      "Visualization": "Библиотека для визуализации компонентов - Bootstrap",
+      "Typography": "Основной шрифт: Raleway, sans-serif",
+      "Colors": "Основные цвета: #a1c872be, #6c757d"
+    }
+}
+}

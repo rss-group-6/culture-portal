@@ -12,6 +12,12 @@ a {
   cursor: pointer;
 }
 
-button, a {
+button,
+a {
   transition: 0.5s;
+}
+
+.preloader {
+  font-size: 2rem;
+  color: #ffffff;
 }

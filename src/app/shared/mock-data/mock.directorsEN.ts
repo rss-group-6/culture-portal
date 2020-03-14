@@ -1,7 +1,7 @@
 import { Director } from "@shared/models/director";
 
-const Directors: Director[] = [
-    {
+export const Directors: Director[] = [
+  {
     "name": "Evstigney",
     "surname": "Mirovich",
     "id": "1",
@@ -65,7 +65,7 @@ const Directors: Director[] = [
       {
         "activity":
           "1st Belarusian State Drama Theater in Minsk (now - Yanka Kupala National Academic Theater)",
-          "center": [53.90088357066573,27.562774500000007]
+        "center": [53.90088357066573, 27.562774500000007]
       }
     ]
   },
@@ -132,7 +132,7 @@ const Directors: Director[] = [
     "placesOfActivity": [
       {
         "activity": "Belarusian Opera and Ballet Theater",
-        "center": [53.91074407066195,27.561848999999974]
+        "center": [53.91074407066195, 27.561848999999974]
       }
     ]
   },
@@ -202,7 +202,7 @@ const Directors: Director[] = [
     "placesOfActivity": [
       {
         "activity": "National Academic Drama Theater named after M. Gorky",
-        "center": [53.89840557065936,27.551131999999964]
+        "center": [53.89840557065936, 27.551131999999964]
       }
     ]
   },
@@ -272,7 +272,7 @@ const Directors: Director[] = [
     "placesOfActivity": [
       {
         "activity": 'Glubokoe district of Vitebsk region',
-        "center": [55.18449707014662,27.862847499999972]
+        "center": [55.18449707014662, 27.862847499999972]
       },
     ],
   },
@@ -336,8 +336,8 @@ const Directors: Director[] = [
     "placesOfActivity": [
       {
         "activity":
-        "1st Belarusian State Drama Theater in Minsk (now - Yanka Kupala National Academic Theater)",
-          "center": [53.90088357066573,27.562774500000007]
+          "1st Belarusian State Drama Theater in Minsk (now - Yanka Kupala National Academic Theater)",
+        "center": [53.90088357066573, 27.562774500000007]
       },
     ],
   },
@@ -406,7 +406,7 @@ const Directors: Director[] = [
       {
         "activity":
           "Moscow Academic Musical Theater of K. S. Stanislavsky and V. I. Nemirovich-Danchenko",
-          "center": [55.764520568969374,37.61039499999998]
+        "center": [55.764520568969374, 37.61039499999998]
       }
     ]
   }]
