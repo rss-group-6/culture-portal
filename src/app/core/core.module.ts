@@ -14,6 +14,8 @@ import { GetRandomAuthorService } from './services/get-random-author.service';
 import { Error404Component } from './components/error404/error404.component';
 import { Error404pageComponent } from './pages/error404page/error404page.component';
 import { LanguageService } from '@core/services/language.service';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const ModuleTranslate = TranslateModule.forRoot({
   loader: {
@@ -34,7 +36,15 @@ const ModuleTranslate = TranslateModule.forRoot({
     Error404Component,
     Error404pageComponent,
   ],
-  imports: [CommonModule, SharedModule, NgbModule, HttpClientModule, ModuleTranslate],
+  imports: [
+    CommonModule,
+    SharedModule,
+    NgbModule,
+    HttpClientModule,
+    ModuleTranslate,
+    NgxSpinnerModule,
+    BrowserAnimationsModule,
+  ],
   exports: [SharedModule, HomePageComponent, HeaderComponent, TranslateModule],
   providers: [GetRandomAuthorService, LanguageService],
 })

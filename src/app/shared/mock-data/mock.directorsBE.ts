@@ -1,7 +1,7 @@
 // tslint:disable:max-line-length
 import { Director } from '@shared/models/director';
 
-export const DirectorsBE: Director[] = [
+export const Directors: Director[] = [
   {
     name: 'Еўсцiгней',
     surname: 'Miровiч',
@@ -56,7 +56,9 @@ export const DirectorsBE: Director[] = [
     ],
     photos: [
       '../assets/images/mirovich1.jpg',
+      '../assets/images/mirovich2.jpg',
       '../assets/images/mirovich3.jpg',
+      '../assets/images/mirovich4.jpg',
       '../assets/images/mirovich5.jpg',
     ],
     videos: ['https://www.youtube.com/watch?v=Yunms45xnog&feature=emb_logo'],

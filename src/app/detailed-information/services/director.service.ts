@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Director } from '@shared/models/director';
 import { Directors } from '@shared/mock-data/mock.directors';
-import { DirectorsEN } from '@shared/mock-data/mock.directorsEN';
-import { DirectorsBE } from '@shared/mock-data/mock.directorsBE';
+import { Directors as DirectorsBE } from '@shared/mock-data/mock.directorsBE';
+import { Directors as DirectorsEN } from '@shared/mock-data/mock.directorsEN';
 
 @Injectable({
   providedIn: 'root',

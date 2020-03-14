@@ -1,7 +1,7 @@
 // tslint:disable:max-line-length
 import { Director } from '@shared/models/director';
 
-export const DirectorsEN: Director[] = [
+export const Directors: Director[] = [
   {
     name: 'Evstigney',
     surname: 'Mirovich',
