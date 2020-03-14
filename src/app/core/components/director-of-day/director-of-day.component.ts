@@ -15,6 +15,6 @@ export class DirectorOfDayComponent {
   ) { }
 
   public goToDetails(): void {
-    this.router.navigate(['director', this.director.id])
+    this.router.navigate(['director', this.director.id]);
   }
 }
