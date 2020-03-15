@@ -12,7 +12,6 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class MemberLogComponent implements OnInit {
   public logs = GeneralLog;
-  public counter = this.worklogService.counter;
 
   constructor(
     public worklogService: WorklogService,

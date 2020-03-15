@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
 import { environment } from '../../../environments/environment';
+import { LanguageService } from '@core/services/language.service';
+import { DataLang } from '@core/models/enums';
 
 @Injectable()
 export class ContentfulService {
@@ -9,9 +11,14 @@ export class ContentfulService {
     space: environment.contentful.spaceId,
     accessToken: environment.contentful.token,
   });
+  private lang: string;
 
-  constructor() {
+  constructor(private languageService: LanguageService) {
     this.directors = this.getCourses();
+    this.languageService.getLanguage().subscribe(lang => {
+      this.lang = DataLang[lang];
+      this.directors = this.getCourses();
+    });
   }
 
   getCourses(query?: object): Promise<Entry<any>[]> {
@@ -19,7 +26,7 @@ export class ContentfulService {
       .getEntries(
         Object.assign(
           {
-            content_type: 'directors',
+            content_type: this.lang,
           },
           query,
         ),

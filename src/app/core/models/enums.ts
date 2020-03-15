@@ -5,3 +5,9 @@ export enum LinksPage {
   styleGuide = 'styleGuide',
   ourTeam = 'ourTeam',
 }
+
+export enum DataLang {
+  'EN' = 'directors',
+  'RU' = 'directorsRu',
+  'BE' = 'directorsBe'
+}

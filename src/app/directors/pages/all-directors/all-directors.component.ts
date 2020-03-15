@@ -27,6 +27,9 @@ export class AllDirectorsComponent implements OnInit, AfterViewInit {
   ) {
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
+      this.contentfulService.directors.then(directors => {
+        this.allDirectors = directors.map(item => item.fields);
+      });
     });
   }
 
