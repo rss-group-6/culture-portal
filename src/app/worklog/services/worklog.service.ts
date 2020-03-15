@@ -7,15 +7,18 @@ export class WorklogService {
   public counter = 0;
 
   public getCurrentMember($event): void {
-    const event = $event.target.className;
+    const controlNext = $event.target.classList.contains('carousel-control-next');
+    const controlNextIcon = $event.target.classList.contains('carousel-control-next-icon');
+    const controlPrev = $event.target.classList.contains('carousel-control-prev');
+    const controlPrevIcon = $event.target.classList.contains('carousel-control-prev-icon');
 
-    if (event === 'carousel-control-next-icon' || event === 'carousel-control-next') {
+    if (controlNext || controlNextIcon) {
       this.counter += 1;
       if (this.counter > 6) {
         this.counter = 0;
       }
     }
-    if (event === 'carousel-control-prev-icon' || event === 'carousel-control-prev') {
+    if (controlPrev || controlPrevIcon) {
       this.counter -= 1;
       if (this.counter < 0) {
         this.counter = 6;

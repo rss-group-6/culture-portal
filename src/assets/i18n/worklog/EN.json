@@ -50,6 +50,7 @@
   "developerListData": "collect about team data",
   "ourTeamPage": "create our team page",
   "ourTeamPageTranslate": "translation of the page our team using the i18n library",
+  "createStyleGuide": "create style-guide page",
 
   "SIDARKEVICH": "SIDARKEVICH",
   "worklogPage": "Work on work log page",
@@ -64,10 +65,15 @@
 
   "SHCHEGLAKOV": "SHCHEGLAKOV",
   "detailedInformationPage": "create detailed information page",
+  "authorPageTimelineTask": "author's page contains timeline",
+  "authorPageVideoTask": "author's page contains video overlay",
+  "authorPagePhotoGalleryTask": "author's page contains photo gallery",
+  "authorPageGeowidgetTask": "author's page contains map (geowidget)",
 
   "GOLOMB": "GOLOMB",
   "createSharedModules": "Add core and shared modules",
   "directorsComponent": "work on directors component",
+  "addSearch": "add search",
 
   "POPOVA": "POPOVA",
   "createModules": "create necessary modules",
