@@ -1,0 +1,10 @@
+<h2 class="text-center mb-5">{{ 'map.title' | translate }}</h2>
+<div class="container mb-5">
+  <angular-yandex-map [center]="placesOfActivity[0].center" [zoom]="12">
+    <angular-yandex-placemark
+      *ngFor="let place of placesOfActivity"
+      [geometry]="place.center"
+      [properties]="setMarkerText(place.activity)"
+    ></angular-yandex-placemark>
+  </angular-yandex-map>
+</div>

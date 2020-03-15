@@ -1,0 +1,20 @@
+youtube-player {
+  width: 100%;
+}
+
+iframe {
+  max-width: 100% !important;
+}
+
+.video {
+  min-width: 160px;
+  color: #a2c872;
+  border-color: #a2c872;
+  font-size: 1.7rem;
+  line-height: 2;
+  &:hover {
+    color: #ffffff;
+    background-color: #a2c872;
+    transition: 1s;
+  }
+}

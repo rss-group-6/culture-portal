@@ -1,0 +1,29 @@
+{"descrPortal":
+    { "name": "Наша команда"},
+    "developer": {
+        "name" : {
+            "Kravchenko": "Евгений",
+            "Lysiuk": "Екатерина",
+            "Sidarkevich": "Михаил",
+            "Shcheglakov": "Михаил",
+            "Golomb": "Мария",
+            "Popova": "Анастасия"
+        },
+        "surname": {
+            "Kravchenko": "Кравченко",
+            "Lysiuk": "Лысюк",
+            "Sidarkevich": "Сидоркевич",
+            "Shcheglakov": "Щеглаков",
+            "Golomb": "Голомб",
+            "Popova": "Попова"
+        },
+        "worklog": {
+            "Kravchenko": "Программист",
+            "Lysiuk": "Программист",
+            "Sidarkevich": "Программист",
+            "Shcheglakov": "Программист",
+            "Golomb": "Программист",
+            "Popova": "Программист"
+        }
+    }
+}

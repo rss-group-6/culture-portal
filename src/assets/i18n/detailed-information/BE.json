@@ -1,0 +1,20 @@
+{
+  "biography": {
+    "title": "Біяграфія"
+  },
+  "listOfWorks": {
+    "title": "Спіс работ",
+    "date": "Даты",
+    "work": "Праца"
+  },
+  "gallery": {
+    "title": "Галерэя"
+  },
+  "videos": {
+    "title": "Відэа",
+    "button": "Паглядзець"
+  },
+  "map": {
+    "title": "Месца Актыўнасці"
+  }
+}
