@@ -11,7 +11,6 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { GetRandomAuthorService } from './services/get-random-author.service';
 import { Error404Component } from './components/error404/error404.component';
-import { Error404pageComponent } from './pages/error404page/error404page.component';
 import { LanguageService } from '@core/services/language.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -33,7 +32,6 @@ const ModuleTranslate = TranslateModule.forRoot({
     DescriptionPortalComponent,
     DirectorOfDayComponent,
     Error404Component,
-    Error404pageComponent,
   ],
   imports: [
     CommonModule,

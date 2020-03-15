@@ -1,7 +1,7 @@
 export enum LinksPage {
-  home ='home',
+  home = 'home',
   allDirectors = 'allDirectors',
   workLog = 'workLog',
   styleGuide = 'styleGuide',
-  ourTeam = 'ourTeam'
+  ourTeam = 'ourTeam',
 }

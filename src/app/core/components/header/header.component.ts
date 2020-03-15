@@ -22,7 +22,6 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   public ngOnInit(): void {
-    this.router.navigateByUrl('/');
     const href = this.router.url;
     this.statePages = {
       home: href === LinksPage.home || href === '/',
