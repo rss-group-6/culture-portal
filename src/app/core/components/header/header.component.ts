@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { IStatePages } from '@core/models/State-pages';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '@core/services/language.service';
+import { LinksPage } from '@core/models/enums';
 
 @Component({
   selector: 'app-header',
@@ -21,13 +22,14 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   public ngOnInit(): void {
-    this.language = 'EN';
+    this.router.navigateByUrl('/');
+    const href = this.router.url;
     this.statePages = {
-      home: true,
-      allDirectors: false,
-      workLog: false,
-      styleGuide: false,
-      ourTeam: false,
+      home: href === LinksPage.home || href === '/',
+      allDirectors: href === LinksPage.allDirectors,
+      workLog: href === LinksPage.workLog,
+      styleGuide: href === LinksPage.styleGuide,
+      ourTeam: href === LinksPage.ourTeam,
     };
     this.translate.setDefaultLang('EN');
     this.language = 'EN';
