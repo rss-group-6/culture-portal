@@ -266,7 +266,7 @@ export const GeneralLog: WorkLog[] = [
     item: [
       {
         id: 1,
-        points: '6.0 hr',
+        points: '2.0 hr',
         title: 'createSharedModules',
         completed: true,
       },
