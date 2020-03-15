@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DirectorService } from '../../services/director.service';
-import { Director } from '@shared/models/director';
+import { Director, PlacesOfActivity, ListOfWorks, Biography } from '@shared/models/director';
 import { LanguageService } from '@core/services/language.service';
 import { TranslateService } from '@ngx-translate/core';
+import { ContentfulService } from '@core/services/contentful.service';
 
 @Component({
   selector: 'app-detailes',
@@ -12,24 +13,38 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class DetailesComponent implements OnInit {
   public director: Director;
-  public currentVideo: string;
   public language = 'EN';
   public id: string;
+  public name: string;
+  public surname: string;
+  public yearsOfLife: string;
+  public photos: string[];
+  public video: string[];
+  public listOfWorks: ListOfWorks[];
+  public placesOfActivity: PlacesOfActivity[];
+  public biography: Biography[];
 
   constructor(
     private route: ActivatedRoute,
     private directorService: DirectorService,
     private translate: TranslateService,
     private languageService: LanguageService,
+    private contentfulService: ContentfulService,
   ) {
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
       this.language = lang;
-      this.getDirector(this.id);
     });
   }
 
   public ngOnInit(): void {
+    this.name = '';
+    this.surname = '';
+    this.yearsOfLife = '';
+    this.photos = [''];
+    this.video = [''];
+    this.placesOfActivity = [{center: [0, 0], activity: ''}];
+
     this.translate.setDefaultLang('EN');
     this.route.params.subscribe(params => {
       this.id = params.id;
@@ -38,6 +53,16 @@ export class DetailesComponent implements OnInit {
   }
 
   public getDirector(id: string): void {
-    this.director = this.directorService.getDirectorById(id, this.language);
+    this.contentfulService.directors.then(directors => {
+      const director = directors.find(item => item.fields.id === id).fields;
+      this.name = director.name;
+      this.surname = director.surname;
+      this.yearsOfLife = director.yearsOfLife;
+      this.photos = director.photos.map(item => item.fields.file.url);
+      this.video = director.videos;
+      this.listOfWorks = director.listOfWorks;
+      this.placesOfActivity = director.placeOfActivity;
+      this.biography = director.biography;
+    });
   }
 }

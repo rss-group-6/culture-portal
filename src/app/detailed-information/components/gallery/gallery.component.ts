@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -6,13 +6,11 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
 })
-export class GalleryComponent implements OnInit {
+export class GalleryComponent {
   @Input() public photos: string[];
   public currentImage: string;
 
   constructor(private modalService: NgbModal) {}
-
-  public ngOnInit(): void {}
 
   public openVerticallyCentered(content: any, image: string): void {
     this.modalService.open(content, { centered: true, size: 'xl' });

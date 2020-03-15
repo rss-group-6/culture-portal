@@ -1,11 +1,11 @@
 <div class="card text-center card-size" (click)="handleClick()">
-  <img src="{{director.photos[0]}}" width="300" height="400" alt="{{director.surname +' '+ director.name}}"
-    class="img-size">
+  <img src="{{ urlPhoto }}" width="300" height="400" alt="{{ surname + ' ' + name }}" class="img-size" />
   <div class="card-body">
     <h3 class="card-title">
-      {{(("directors.surname." + director.id) | translate) +' '+ (("directors.name." + director.id)| translate)}}</h3>
-    <h5 class="card-title">{{("directors.yearsOfLife."+ director.id) | translate}}</h5>
-    <h6 class="card-title"> {{("directors.birthPlace."+director.id) | translate}}</h6>
+      {{ surname + ' ' + name }}
+    </h3>
+    <h5 class="card-title">{{ yearsOfLife }}</h5>
+    <h6 class="card-title">{{ birthPlace }}</h6>
   </div>
   <div class="shading"></div>
 </div>

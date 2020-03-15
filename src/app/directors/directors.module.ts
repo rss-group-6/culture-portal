@@ -6,6 +6,8 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AllDirectorsComponent } from './pages/all-directors/all-directors.component';
 import { DirectorCardComponent } from './components/director-card/director-card.component';
+import { SearchService } from './services/search.service';
+import { SharedModule } from '@shared/shared.module';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -18,13 +20,12 @@ const ModuleTranslate = TranslateModule.forChild({
 
 @NgModule({
   declarations: [AllDirectorsComponent, DirectorCardComponent],
-  imports: [CommonModule, DirectorsRoutingModule, ModuleTranslate],
+  imports: [CommonModule, DirectorsRoutingModule, ModuleTranslate, SharedModule],
   exports: [AllDirectorsComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  providers: [SearchService],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-
-
-export class DirectorsModule { }
+export class DirectorsModule {}
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/directors/', '.json');

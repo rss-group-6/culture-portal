@@ -1,20 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Director } from '@shared/models/director';
-import { Directors } from '@shared/mock-data/mock.directors';
-import { Subject, Observable } from 'rxjs';
+import { ContentfulService } from '@core/services/contentful.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class GetRandomAuthorService {
-  public directors: Director[] = Directors;
-  public author: Subject<Director> = new Subject<Director>();
-  public author$: Observable<Director> = this.author.asObservable();
+  public directors: Director[];
 
-  constructor() { }
+  constructor(private contentfulService: ContentfulService) {}
 
-  public getAuthor(): void {
-    const director = this.directors[Math.floor(Math.random() * this.directors.length)];
-    this.author.next(director);
+  public getAuthor(): Promise<Director> {
+    return this.contentfulService.directors.then(respDirectors => {
+      this.directors = respDirectors.map(item => item.fields);
+      return this.directors[Math.floor(Math.random() * this.directors.length)];
+    });
   }
 }

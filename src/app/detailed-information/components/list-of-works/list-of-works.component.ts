@@ -1,14 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ListOfWorks } from '@shared/models/director';
 
 @Component({
   selector: 'app-list-of-works',
   templateUrl: './list-of-works.component.html',
   styleUrls: ['./list-of-works.component.scss'],
 })
-export class ListOfWorksComponent implements OnInit {
-  @Input() public listOfWorks: { date: string; work: string }[];
-
-  constructor() {}
-
-  ngOnInit(): void {}
+export class ListOfWorksComponent {
+  @Input() public listOfWorks: ListOfWorks[];
 }

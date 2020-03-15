@@ -5,7 +5,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header.component';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { DescriptionPortalComponent } from './components/description-portal/description-portal.component';
-import { DirectorOfDayPageComponent } from './pages/director-of-day-page/director-of-day-page.component';
 import { DirectorOfDayComponent } from './components/director-of-day/director-of-day.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -16,6 +15,7 @@ import { Error404pageComponent } from './pages/error404page/error404page.compone
 import { LanguageService } from '@core/services/language.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContentfulService } from '@core/services/contentful.service';
 
 const ModuleTranslate = TranslateModule.forRoot({
   loader: {
@@ -32,7 +32,6 @@ const ModuleTranslate = TranslateModule.forRoot({
     HomePageComponent,
     DescriptionPortalComponent,
     DirectorOfDayComponent,
-    DirectorOfDayPageComponent,
     Error404Component,
     Error404pageComponent,
   ],
@@ -46,7 +45,7 @@ const ModuleTranslate = TranslateModule.forRoot({
     BrowserAnimationsModule,
   ],
   exports: [SharedModule, HomePageComponent, HeaderComponent, TranslateModule],
-  providers: [GetRandomAuthorService, LanguageService],
+  providers: [GetRandomAuthorService, LanguageService, ContentfulService],
 })
 export class CoreModule {}
 

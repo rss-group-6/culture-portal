@@ -1,13 +1,8 @@
-<h1 class="text-center mb-3">{{ director.name }} {{ director.surname }}</h1>
-<p class="text-center mb-5">{{ director.yearsOfLife }}</p>
-<img class="img-fluid rounded mx-auto d-block mb-5" [src]="director.photos[0]" alt="" />
-
-<app-timeline [biography]="director.biography"></app-timeline>
-
-<app-list-of-works [listOfWorks]="director.listOfWorks"></app-list-of-works>
-
-<app-gallery [photos]="director.photos"></app-gallery>
-
-<app-videos [videos]="director.videos"></app-videos>
-
-<app-map [placesOfActivity]="director.placesOfActivity"></app-map>
+<h1 class="text-center mb-3">{{ name }} {{ surname }}</h1>
+<p class="text-center mb-5">{{ yearsOfLife }}</p>
+<img class="img-fluid rounded mx-auto d-block mb-5" [src]="photos[0]" alt="" />
+<app-timeline [biography]="biography"></app-timeline>
+<app-list-of-works [listOfWorks]="listOfWorks"></app-list-of-works>
+<app-gallery [photos]="photos"></app-gallery>
+<app-videos [videos]="video"></app-videos>
+<app-map [placesOfActivity]="placesOfActivity"></app-map>

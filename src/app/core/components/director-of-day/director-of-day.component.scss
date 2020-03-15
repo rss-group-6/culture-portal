@@ -29,6 +29,7 @@
     border-color: #A2C872;
     font-size: 1.7rem;
     line-height: 2;
+
     &:hover {
         color: #ffffff;
         background-color: #A2C872;
@@ -46,9 +47,9 @@
     }
     p.generalInfo {
         font-size: 1.5rem;
-    } 
+    }
 }
-  
+
 @media screen and (max-width: 575px) {
     h1 {
         font-size: 1.6rem;
@@ -59,7 +60,7 @@
     }
     p.generalInfo {
         font-size: 1rem;
-    } 
+    }
 
     .more {
         font-size: 1rem;

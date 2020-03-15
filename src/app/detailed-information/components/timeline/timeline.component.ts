@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Biography } from '@shared/models/director';
 
 @Component({
   selector: 'app-timeline',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./timeline.component.scss'],
 })
 export class TimelineComponent implements OnInit {
-  @Input() public biography: { date: string; content: string }[];
+  @Input() public biography: Biography[];
 
   constructor() {}
 

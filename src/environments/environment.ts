@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
   MAP_API_KEY: 'cd6bd965-79c3-43d5-8d3c-e729092ed0d3',
+  contentful: {
+    spaceId: 'lidrwqi1q6zr',
+    token: 'ZeXxPRrDawivI8mASrvFflgLAN8E2K_tmzvWJwiHilM',
+  }
 };
 
 /*

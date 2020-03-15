@@ -25,7 +25,6 @@ export class VideosComponent implements OnInit {
 
   public getVideoId(url: string): string {
     const id: string = url.match(/v\=[A-Za-z0-9]+/)[0];
-    console.log(id);
     return id.slice(2);
   }
 }

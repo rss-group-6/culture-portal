@@ -26,6 +26,8 @@
     "@ngx-translate/http-loader": "^4.0.0",
     "angular-mgl-timeline.9": "^0.3.5",
     "angular8-yandex-maps": "^1.11.0",
+    "contentful": "^7.14.0",
+    "marked": "^0.8.0",
     "ngx-spinner": "^9.0.1",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
