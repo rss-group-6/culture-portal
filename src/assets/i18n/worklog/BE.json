@@ -50,6 +50,7 @@
   "developerListData": "збор інфармацыі аб камандзе",
   "ourTeamPage": "стварэнне старонкі 'наша каманда",
   "ourTeamPageTranslate": "пераклад старонкі 'наша каманда' з выкарыстаннем бібліятэкі i18n",
+  "createStyleGuide": "стварэнне старонкі 'гід па стылі'",
 
   "SIDARKEVICH": "SIDARKEVICH",
   "worklogPage": "праца над працоўным часопісам",
@@ -60,14 +61,19 @@
   "total": "даданне логікі для разліку сумарнага часу выдаткаванага на праект для кожнага члена каманды",
   "refactorWorklogData": "рэфактарынг дадзеных часопіса для выкарыстання бібліятэкі i18n",
   "worklogDictionary": "стварэнне слоўнікаў для бібліятэкі i18n на 3-х мовах",
-  "worklogTranslate,": "пераклад старонкі 'працоўны часопіс' з выкарыстаннем бібліятэкі i18n",
+  "worklogTranslate": "пераклад старонкі 'працоўны часопіс' з выкарыстаннем бібліятэкі i18n",
 
   "SHCHEGLAKOV": "SHCHEGLAKOV",
   "detailedInformationPage": "стварэнне старонкі 'дэталёвая інфармацыя' пра аўтара",
+  "authorPageTimelineTask": "Старонка аўтара змяшчае часовую шкалу",
+  "authorPageVideoTask": "Старонка аўтара утрымлівае відэа",
+  "authorPagePhotoGalleryTask": "Старонка аўтара змяшчае фотагалерэю",
+  "authorPageGeowidgetTask": "Старонка аўтара змяшчае карту (гео віджэт)",
 
   "GOLOMB": "GOLOMB",
   "createSharedModules": "добаление асноўнага і агульнага модуляў",
   "directorsComponent": "праца над кампанентам 'ўсе рэжысёры",
+  "addSearch": "даданне пошуку на старонку",
 
   "POPOVA": "POPOVA",
   "createModules": "стварэнне неабходных модуляў",
