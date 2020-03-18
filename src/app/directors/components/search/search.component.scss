@@ -1,0 +1,20 @@
+.search {
+  max-width: 1440px;
+
+  &__input,
+  &__params {
+    max-width: 500px;
+    margin: 20px auto 0;
+  }
+
+  &__param {
+    background-color: #a1c872be;
+    color: #ffffff;
+  }
+}
+
+.active {
+  background-color: #a1cd6b;
+  border-right: 2px solid gray;
+  border-top: 2px solid gray;
+}

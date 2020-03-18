@@ -8,6 +8,9 @@ import { AllDirectorsComponent } from './pages/all-directors/all-directors.compo
 import { DirectorCardComponent } from './components/director-card/director-card.component';
 import { SearchService } from './services/search.service';
 import { SharedModule } from '@shared/shared.module';
+import { SearchComponent } from './components/search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SearchByParamPipe } from './pipes/search-by-param.pipe';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -19,8 +22,8 @@ const ModuleTranslate = TranslateModule.forChild({
 });
 
 @NgModule({
-  declarations: [AllDirectorsComponent, DirectorCardComponent],
-  imports: [CommonModule, DirectorsRoutingModule, ModuleTranslate, SharedModule],
+  declarations: [AllDirectorsComponent, DirectorCardComponent, SearchComponent, SearchByParamPipe],
+  imports: [CommonModule, DirectorsRoutingModule, ModuleTranslate, SharedModule, ReactiveFormsModule],
   exports: [AllDirectorsComponent],
   providers: [SearchService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

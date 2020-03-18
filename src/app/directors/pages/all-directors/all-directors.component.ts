@@ -1,7 +1,6 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Director } from '@shared/models/director';
-import { Observable, fromEvent } from 'rxjs';
-import { map, debounceTime } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 import { SearchService } from '../../services/search.service';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '@core/services/language.service';
@@ -13,9 +12,11 @@ import { ContentfulService } from '@core/services/contentful.service';
   templateUrl: './all-directors.component.html',
   styleUrls: ['./all-directors.component.scss'],
 })
-export class AllDirectorsComponent implements OnInit, AfterViewInit {
+export class AllDirectorsComponent implements OnInit {
   public allDirectors: Director[];
   public input: Observable<Event>;
+  public searchParam: string;
+  public  searchValue: string;
   @ViewChild('searchQuery') public searchQuery: ElementRef;
 
   constructor(
@@ -39,22 +40,6 @@ export class AllDirectorsComponent implements OnInit, AfterViewInit {
     });
     this.translate.setDefaultLang('EN');
     this.spinner();
-  }
-
-  public ngAfterViewInit(): void {
-    this.input = fromEvent(this.searchQuery.nativeElement, 'keyup');
-    this.input
-      .pipe(
-        map(event => (event.target as HTMLInputElement).value),
-        map(inputStr => {
-          if (inputStr.length > 2) {
-            return inputStr;
-          } else {
-            return '';
-          }
-        }),
-        debounceTime(500),
-      );
   }
 
   private spinner(): void {

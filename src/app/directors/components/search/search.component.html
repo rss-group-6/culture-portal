@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-flex flex-column align-items-center search">
+      <input
+        #inpSearch
+        class="form-control search__input"
+        type="text"
+        placeholder="{{ 'input.search' | translate }}"
+      />
+      <div
+        class="btn-group btn-group-toggle search__params"
+        ngbRadioGroup
+        name="radioBasic"
+        [(ngModel)]="param"
+      >
+        <label ngbButtonLabel class="search__param shadow-none" [class.active]="param === 'name'">
+          <input ngbButton type="radio" value="name" /> Search by name
+        </label>
+        <label ngbButtonLabel class="search__param shadow-none" [class.active]="param === 'city'">
+          <input ngbButton type="radio" value="city" /> Search by city
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

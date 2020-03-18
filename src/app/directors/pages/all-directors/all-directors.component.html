@@ -1,11 +1,19 @@
 <div class="container-fluid justify-content-center wrapper content-wrapper">
-  <input class="form-control search-input" type="text" placeholder="{{ 'input.search' | translate }}" #searchQuery>
-
+  <app-search (searchValue)="searchValue = $event" (searchParam)="searchParam = $event"></app-search>
   <div class="card-wrapper">
-    <app-director-card *ngFor="let director of allDirectors" [director]="director"></app-director-card>
+    <app-director-card
+      *ngFor="let director of allDirectors | searchByParam: searchValue:searchParam"
+      [director]="director"
+    ></app-director-card>
   </div>
 </div>
 
-<ngx-spinner bdColor="rgba(51,51,51,1)" size="medium" color="#fff" type="ball-scale-multiple" class="preloader">
+<ngx-spinner
+  bdColor="rgba(51,51,51,1)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+  class="preloader"
+>
   <p>Loading...</p>
 </ngx-spinner>

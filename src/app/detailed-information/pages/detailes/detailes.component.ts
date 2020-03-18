@@ -30,6 +30,9 @@ export class DetailesComponent implements OnInit {
   ) {
     this.languageService.getLanguage().subscribe(lang => {
       this.translate.use(lang);
+      setTimeout(() => {
+        this.getDirector(this.id);
+      }, 0);
     });
   }
 
