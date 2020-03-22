@@ -1,13 +1,4 @@
 <h2 class="text-center my-5 font-weight-bold">{{ 'gallery.title' | translate }}</h2>
-<div class="gallery justify-content-center d-flex flex-wrap mb-5">
-  <div
-    class="img-holder m-2 d-flex justify-content-center align-items-center"
-    *ngFor="let photo of photos"
-    (click)="openVerticallyCentered(content, photo)"
-  >
-    <img class="rounded" [src]="photo" alt="" />
-  </div>
-</div>
 <ng-template #content let-modal class="container-fluid">
   <div class="modal-header">
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
@@ -21,3 +12,14 @@
     <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
   </div>
 </ng-template>
+<hr>
+<div class="slick-slider">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let photo of photos" class="slide mx-3" (click)="openVerticallyCentered(content, photo)">
+      <img src="{{ photo }}" alt="" height="500px"/>
+    </div>
+  </ngx-slick-carousel>
+  <button class="btn-slide-next" (click)="slickModal.slickNext()"></button>
+  <button class="btn-slide-prev" (click)="slickModal.slickPrev()"></button>
+</div>
+<hr>

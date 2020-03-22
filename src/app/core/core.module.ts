@@ -38,7 +38,7 @@ const ModuleTranslate = TranslateModule.forRoot({
     HttpClientModule,
     ModuleTranslate,
     NgxSpinnerModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   exports: [SharedModule, HomePageComponent, HeaderComponent, TranslateModule],
   providers: [GetRandomAuthorService, LanguageService, ContentfulService],

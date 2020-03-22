@@ -16,6 +16,7 @@ import { MglTimelineModule } from 'angular-mgl-timeline.9';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { environment } from '../../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 const ModuleTranslate = TranslateModule.forChild({
   loader: {
@@ -44,6 +45,7 @@ const ModuleTranslate = TranslateModule.forChild({
     YouTubePlayerModule,
     MglTimelineModule,
     NgbModule,
+    SlickCarouselModule,
   ],
 })
 export class DetailedInformationModule {}
