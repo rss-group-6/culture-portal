@@ -1,6 +1,6 @@
-<div class="container-fluid justify-content-center wrapper content-wrapper">
+<div class="container-fluid justify-content-center wrapper content-wrapper pb-5">
   <app-search (searchValue)="searchValue = $event" (searchParam)="searchParam = $event"></app-search>
-  <div class="card-wrapper">
+  <div class="card-wrapper d-flex align-items-stretch flex-wrap">
     <app-director-card
       *ngFor="let director of allDirectors | searchByParam: searchValue:searchParam"
       [director]="director"

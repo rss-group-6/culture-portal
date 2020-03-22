@@ -4,6 +4,7 @@ $green: #a2c872;
 :host{
   margin:20px auto 0;
   width: 300px;
+  cursor: pointer;
 }
 
 $card-height: 100%;
@@ -15,16 +16,12 @@ $card-width: 100%;
   }
 }
 
-.shading {
-  background-color: black;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-  transition: 1s ease ;
-  opacity: 0;
+.card {
+  transition: 0.3s;
+
   &:hover{
-    opacity: 0.3;
+    box-shadow: -3px 3px 16px 1px #828589;
+    transform: scale(1.01);
   }
 }
 

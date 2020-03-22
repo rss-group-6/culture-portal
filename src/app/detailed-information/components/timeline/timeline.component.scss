@@ -1,6 +1,30 @@
+:host {
+  font-family: 'Raleway', sans-serif;
+}
+
 mgl-timeline-entry-dot {
   text-align: center;
   background-color: #a2c872;
   color: darkblue;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+mgl-timeline-entry-header {
+  cursor: pointer;
+}
+
+.title {
+  position: relative;
+  width: 250px;
+  font-size: 5rem;
+  margin-bottom: 100px;
+  margin-top: 30px;
+
+  &::after {
+    content: url('../../../../assets/images/border-bottom-biography.png');
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
 }

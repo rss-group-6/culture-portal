@@ -1,8 +1,16 @@
-<h1 class="text-center mb-3">{{ name }} {{ surname }}</h1>
-<p class="text-center mb-5">{{ yearsOfLife }}</p>
-<img class="img-fluid rounded mx-auto d-block mb-5" [src]="photos[0]" alt="" />
-<app-timeline [biography]="biography"></app-timeline>
-<app-list-of-works [listOfWorks]="listOfWorks"></app-list-of-works>
-<app-gallery [photos]="photos"></app-gallery>
-<app-videos [videos]="video"></app-videos>
-<app-map [placesOfActivity]="placesOfActivity"></app-map>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 detailed-information mx-auto pt-5">
+      <div class="director">
+        <h1 class="text-center mb-3">{{ name }} {{ surname }}</h1>
+        <p class="text-center mb-5">{{ yearsOfLife }}</p>
+        <img class="img-fluid rounded mx-auto d-block mb-5" [src]="photos[0]" alt="" />
+      </div>
+      <app-timeline [biography]="biography"></app-timeline>
+      <app-list-of-works [listOfWorks]="listOfWorks"></app-list-of-works>
+      <app-gallery [photos]="photos"></app-gallery>
+      <app-videos [videos]="video"></app-videos>
+      <app-map [placesOfActivity]="placesOfActivity"></app-map>
+    </div>
+  </div>
+</div>

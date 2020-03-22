@@ -1,68 +1,80 @@
 @keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes rightToLeft {
-    from { right: -20%; }
-    to { right: 0; }
+  from {
+    right: -20%;
+  }
+  to {
+    right: 0;
+  }
 }
 
 @keyframes leftToRight {
-    from { left: -20%; }
-    to { left: 0; }
+  from {
+    left: -20%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .image {
-    animation: fadein 4s, leftToRight 3s;
-    max-width: 300px;
+  animation: fadein 4s, leftToRight 3s;
+  max-width: 300px;
 }
 
 .info {
-    font-family: Raleway, sans-serif;
-    animation: fadein 4s, rightToLeft 3s;
+  font-family: Raleway, sans-serif;
+  animation: fadein 4s, rightToLeft 3s;
 }
 
 .more {
-    min-width: 160px;
-    color: #A2C872;
-    border-color: #A2C872;
-    font-size: 1.7rem;
-    line-height: 2;
+  min-width: 160px;
+  color: #a2c872;
+  border-color: #a2c872;
+  font-size: 1.7rem;
+  line-height: 2;
 
-    &:hover {
-        color: #ffffff;
-        background-color: #A2C872;
-        transition: 1s;
-    }
+  &:hover {
+    color: #ffffff;
+    background-color: #a2c872;
+    transition: 1s;
+  }
 }
 
 @media screen and (max-width: 970px) {
-    h1 {
-        font-size: 2.3rem;
-    }
+  h1 {
+    font-size: 2.3rem;
+  }
 
-    h3 {
-        font-size: 1.6rem;
-    }
-    p.generalInfo {
-        font-size: 1.5rem;
-    }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p.generalInfo {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
-    h1 {
-        font-size: 1.6rem;
-    }
+  h1 {
+    font-size: 1.6rem;
+  }
 
-    h3 {
-        font-size: 1rem;
-    }
-    p.generalInfo {
-        font-size: 1rem;
-    }
+  h3 {
+    font-size: 1rem;
+  }
+  p.generalInfo {
+    font-size: 1rem;
+  }
 
-    .more {
-        font-size: 1rem;
-    }
+  .more {
+    font-size: 1rem;
+  }
 }
